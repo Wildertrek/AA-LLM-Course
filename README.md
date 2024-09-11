@@ -37,9 +37,21 @@ This course immerses students in the practical and theoretical aspects of Large 
 
 - **Project Planning:** Introduction to the four projects, understanding project scopes, setting individual objectives.
 
-**Week 3-4: Prompt Engineering**
-- **Learning:** Mastering prompt design to effectively guide LLM outputs.
-- **Project 1 - Prompt Engineering:** Independently design and refine prompts to achieve desired responses from an LLM.
+### **Week 3-4: Prompt Engineering with Function Calling**
+
+**Learning:**
+- Mastering prompt design to effectively guide LLM outputs.
+- Introduction to **function calling** in LLMs: how to use prompts to dynamically call functions, APIs, and retrieve structured data (e.g., through OpenAI function calling or similar frameworks).
+- Understanding how function calling can enhance LLMs' ability to provide accurate and actionable responses by interacting with external systems or services.
+
+**Project 1 - Prompt Engineering with Function Calling:**
+- **Objective:** Independently design and refine prompts to achieve desired responses from an LLM. Incorporate function calling into the prompt design to enable real-time interaction with APIs or custom functions (e.g., retrieving external data, performing calculations, or generating structured outputs).
+- **Deliverable:** Demonstrate the application of prompt engineering with function calling to solve a practical problem, such as dynamically fetching information from a database or executing complex tasks based on user input.
+
+---
+
+By introducing function calling into the prompt engineering section, you will provide students with a more comprehensive understanding of modern LLM capabilities and how to use LLMs in real-world scenarios.
+
 
 **Week 5-6: Retrieval Augmented Generation (RAG)**
 - **Learning:** Implementing RAG to supplement LLMs with external data.
