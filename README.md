@@ -88,8 +88,10 @@ This course immerses students in the practical and theoretical aspects of Genera
 - Final Presentations: 20%  
 
 ### **Textbooks and Resources:**  
-- Primary Textbook: *Advanced Techniques in Large Language Models* by B. Scholar.  
+- Primary Textbook: *[Building LLMs for Production, Enhancing LLM Abilities and Reliability with Prompting, Fine-Tuning, and RAG](https://learning.oreilly.com/library/view/building-llms-for/9798324731472/titlepage.xhtml)* by LOUIS-FRANÇOIS BOUCHARD.
+- Supplementary book materials: https://towardsai.net/book
 - Supplementary materials including research articles, online courses, and tutorials.  
+
 
 ### **Software and Tools:**  
 - Programming languages: Python  
