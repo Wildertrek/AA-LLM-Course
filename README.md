@@ -1,94 +1,101 @@
-# AA-LLM-Course
 
+---
 
-**Course Title: Advanced Applications of Large Language Models (LLMs)**
+**Course Title:** Advanced Applications of Large Language Models (LLMs)  
+**Course Number:** COSC 650  
+**Semester:** Fall 2024  
+**Credit Hours:** 3  
+**Instructors:**
 
-**Course Level: 650**
+### **Course Description:**  
+This course immerses students in the practical and theoretical aspects of Generative AI and Large Language Models (LLMs), including graph-enhanced applications. Individual projects will focus on prompt engineering, retrieval-augmented generation (RAG) with graph databases, function calling, fine-tuning techniques, and creating LLM-based agents. The curriculum includes hands-on interaction with LLM APIs, integration into applications using Streamlit, JavaScript/Node.js, and ethical AI practices.
 
-**Abstract:**
+### **Course Objectives:**  
+1. Develop a deep understanding of LLMs and their applications.
+2. Learn and apply techniques such as prompt engineering, retrieval-augmented generation, function calling, and fine-tuning.
+3. Explore the integration of graph-based data structures to enhance LLM capabilities.
+4. Design and implement LLM-based solutions for real-world tasks, including integrating LLM agents into interactive applications using frameworks like Streamlit or JavaScript and Node.js.
+5. Build autonomous LLM agents capable of executing multi-step workflows and integrating them with user interfaces for enhanced interactivity.
+6. Apply ethical considerations and responsible AI practices in LLM deployment.
 
-This advanced course offers a deep dive into the mechanisms and applications of Large Language Models (LLMs), tailored for students to independently develop and refine their skills in cutting-edge AI technologies. Throughout the semester, participants will engage in a series of individual projects that encompass prompt engineering, retrieval-augmented generation (RAG), fine-tuning techniques, and the creation of an interactive LLM-based agent.
+### **Weekly Breakdown and Project Integration:**
 
-The curriculum is designed to build a robust understanding of the theoretical underpinnings of LLMs, including transformer architectures and attention mechanisms, while also emphasizing practical skills in data preparation, model training, and deployment strategies. Students will explore how to enhance LLM outputs through sophisticated prompt design, integrate external knowledge using RAG systems, adapt LLMs to specialized tasks with fine-tuning, and develop functional LLM-based agents for real-world applications.
+#### **Week 1: Introduction to Generative AI, LLMs & Key Terminology**
+- **Topics:** Introduction to Generative AI, Large Language Models (LLMs), key terminology (tokens, embeddings, prompts), real-world applications through a Survey of LLMs.
+- **Hands-on:** Tokenization and embedding exercises, basic prompt creation using LLM APIs.
+- **Overview:** Introduction to upcoming projects and individual objectives.
 
-Each project is structured to challenge students to apply classroom knowledge to solve complex problems, fostering skills in AI project management and ethical AI deployment. By the end of the course, students will not only have a comprehensive grasp of LLM capabilities but will also be prepared to implement these models effectively and responsibly in various professional settings. This course is ideal for graduate students aiming to specialize in the dynamic field of language models, providing a foundation for both academic research and industry application.
+#### **Week 2: API Usage and LLM Interaction**
+- **Topics:** APIs for LLM Interaction (OpenAI, Azure OpenAI), calling LLM APIs with various parameters, exploring API-driven generation tasks.
+- **Hands-on:** Calling LLM APIs for text generation and handling API responses.
 
+#### **Week 3: Prompt Engineering Best Practices**
+- **Topics:** Advanced prompt engineering techniques, designing effective prompts, common pitfalls, and improvement strategies.
+- **Hands-on:** Experimenting with prompts to achieve desired responses.
 
-**Course Structure for Advanced Applications of Large Language Models (LLMs)**
+#### **Week 4: Retrieval-Augmented Generation (RAG) and Graph Integration**
+- **Topics:** RAG architecture and concepts, integrating graph databases to enhance retrieval, graph embeddings, and chunking documents.
+- **Hands-on:** Building a basic RAG pipeline with pre-trained models, integrating graph data for enhanced information retrieval.
 
-**Course Number: COSC 650**
-**Semester: Fall 2024**
-**Credit Hours: 3**
-**Instructor: Dr. Jens Gregor, Joseph Raetano**
+#### **Week 5: Vector Search, Indexing, and Graph Databases**
+- **Topics:** Vector search concepts, similarity and distance metrics, indexing strategies, using vectors in document retrieval and LLMs, introduction to graph databases (e.g., Neo4j).
+- **Hands-on:** Implementing a vector search mechanism with a document corpus, creating and querying a simple graph database to augment LLM responses.
 
+#### **Week 6: Function Calling with LLMs**
+- **Topics:** Understanding function calling in LLMs, when and how to use function calling in LLM-based applications.
+- **Hands-on:** Setting up LLM function calls for external operations.
 
-**Course Description:**
-This course immerses students in the practical and theoretical aspects of Large Language Models (LLMs), through individual projects focused on prompt engineering, retrieval-augmented generation (RAG), fine-tuning techniques, and the creation of an LLM-based agent.
+#### **Week 7: Open Source LangChain & LlamaIndex Frameworks**
+- **Topics:** Overview of LangChain and LlamaIndex, building workflows for LLM-driven applications using LangChain, document management with LlamaIndex.
+- **Hands-on:** Set up a LangChain-based project that utilizes LlamaIndex for managing and retrieving documents, incorporating graph data where applicable.
 
-**Course Objectives:**
-- Develop a deep understanding of LLMs through comprehensive individual projects.
-- Apply theoretical knowledge to design, implement, and optimize LLMs for specific tasks.
-- Explore and address ethical considerations and the societal impacts of deploying LLMs.
+#### **Week 8: Agent-Based Applications with LLMs**
+- **Topics:** Introduction to LLM agents and autonomous workflows, use cases for LLMs as agents, building multi-step workflows with agents.
+- **Hands-on:** Implementing a basic LLM agent using LangChain to solve a task autonomously, leveraging graph data for enhanced decision-making.
 
-**Weekly Breakdown and Project Integration:**
+#### **Week 9: Integration into Interactive Applications**
+- **Topics:** Integrating LLMs into interactive applications using frameworks like Streamlit and JavaScript/Node.js, creating user interfaces for LLM-based agents.
+- **Hands-on:** Build a simple interactive application using Streamlit or JavaScript/Node.js that interfaces with an LLM agent to showcase real-time interactions.
 
-**Week 1-2: Introduction and Fundamentals**
-- **Learning:** Overview of LLMs, architecture of transformers, basics of tokenization and attention mechanisms and a survey of the families of LLMs. Overview of the various techniques for advanced applications using LLMs(Prompt Engineering, Fine Tuning, RAG, Agents).
+#### **Week 10: Assistant API Integration**
+- **Topics:** Overview of Assistant API, basic use cases and features, integrating it with LLM-driven applications.
+- **Hands-on:** Simple Assistant API integration using OpenAI/Azure OpenAI for generating conversational responses within a web interface.
 
-- **Project Planning:** Introduction to the four projects, understanding project scopes, setting individual objectives.
+#### **Week 11: Chatbot Evaluation**
+- **Topics:** Evaluating chatbot performance, key metrics (accuracy, relevance, user satisfaction), iterating on chatbot design based on feedback and evaluation.
+- **Hands-on:** Evaluate your chatbot using test cases and performance metrics, incorporate improvements based on evaluation results.
 
-**Week 3-4: Prompt Engineering with Function Calling**
+#### **Week 12: Fine-Tuning LLMs**
+- **Topics:** When and why to fine-tune an LLM, understanding fine-tuning models for specific domains, tools for fine-tuning (Hugging Face, Azure OpenAI).
+- **Hands-on:** Overview and demonstration of fine-tuning on a domain-specific task, integrate the fine-tuned model into an application.
 
-**Learning:**
-- Mastering prompt design to effectively guide LLM outputs.
-- Introduction to **function calling** in LLMs: how to use prompts to dynamically call functions, APIs, and retrieve structured data (e.g., through OpenAI function calling or similar frameworks).
-- Understanding how function calling can enhance LLMs' ability to provide accurate and actionable responses by interacting with external systems or services.
+#### **Week 13: Responsible AI Practices**
+- **Topics:** Ethical considerations in AI development, Microsoft’s Responsible AI principles, implementing fairness, transparency, and accountability in AI systems.
+- **Hands-on:** Analyzing your chatbot or LLM-based project through the lens of Responsible AI, implementing measures for ethical AI deployment.
 
-**Project 1 - Prompt Engineering with Function Calling:**
-- **Objective:** Independently design and refine prompts to achieve desired responses from an LLM. Incorporate function calling into the prompt design to enable real-time interaction with APIs or custom functions (e.g., retrieving external data, performing calculations, or generating structured outputs).
-- **Deliverable:** Demonstrate the application of prompt engineering with function calling to solve a practical problem, such as dynamically fetching information from a database or executing complex tasks based on user input.
+#### **Week 14: Project Preparation and Integration**
+- **Topics:** Refining and integrating project components into a cohesive application.
+- **Hands-on:** Complete all projects, focusing on integrating LLM functionalities into the interactive application, including graph integration, preparing for final presentations.
 
-**Week 5-6: Retrieval Augmented Generation (RAG)**
-- **Learning:** Implementing RAG to supplement LLMs with external data.
-- **Project 2 - RAG:** Build and fine-tune a retrieval system to improve the information richness of LLM responses.
+#### **Week 15: Project Presentation and Final Evaluation**
+- **Topics:** Presenting the final chatbot project integrated into an interactive application, peer review, and feedback.
+- **Hands-on:** Final project presentation and Q&A, evaluation based on technical merit, innovation, and application of learned material.
 
-**Week 7-8: Fine Tuning Techniques**
-- **Learning:** Techniques for fine-tuning LLMs to specialized tasks or domains.
-- **Project 3 - Fine Tuning:** Conduct fine-tuning on a pre-trained LLM for a selected domain, using a curated dataset.
+### **Assessment Methods:**  
+- Projects 1-4: Each project 15% (Total 60%)  
+- Participation and Weekly Assignments: 10%  
+- Peer Reviews and Interaction: 10%  
+- Final Presentations: 20%  
 
-**Week 9-10: Creating an LLM-Based Agent**
-- **Learning:** Developing interactive agents powered by LLMs.
-- **Project 4 - LLM-Based Agent:** Create an interactive, task-oriented agent using LLM technology.
+### **Textbooks and Resources:**  
+- Primary Textbook: *Advanced Techniques in Large Language Models* by B. Scholar.  
+- Supplementary materials including research articles, online courses, and tutorials.  
 
-**Week 11: Midterm Review and Feedback**
-- **Presentation:** Individual presentations on the progress and challenges of Projects 1 and 2.
-- **Feedback:** Receive detailed feedback from peers and the instructor to refine projects.
+### **Software and Tools:**  
+- Programming languages: Python  
+- AI frameworks: TensorFlow, PyTorch, OpenAI  
+- Application frameworks: Streamlit, JavaScript/Node.js  
+- Graph databases: Neo4j  
+- Cloud services and AI platforms: Azure, Open Source  
 
-**Week 12-13: Advanced Integration and Applications**
-- **Learning:** Advanced techniques for integrating LLMs with other AI systems, discussing ethical deployments.
-- **Project Continuation:** Apply feedback and advanced insights to further develop and refine Projects 3 and 4.
-
-**Week 14: Final Project Preparation**
-- **Finalization:** Complete all projects, focusing on robust documentation and preparing for final presentations.
-- **Review:** Opportunity for individual consultation with the instructor to ensure project completion and readiness for presentation.
-
-**Week 15: Final Project Presentations**
-- **Presentation:** Showcase final outcomes and solutions for all projects.
-- **Evaluation:** Projects evaluated on technical merit, innovation, application of learned material, and presentation quality.
-
-**Assessment Methods:**
-- Projects 1-4: Each project 15% (Total 60%)
-- Participation and Weekly Assignments: 10%
-- Peer Reviews and Interaction: 10%
-- Final Presentations: 20%
-
-**Textbooks and Resources:**
-- Primary Textbook: *Advanced Techniques in Large Language Models* by B. Scholar.
-- Supplementary materials including research articles, online courses, and tutorials.
-
-**Software and Tools:**
-- Programming languages: Python
-- AI frameworks: TensorFlow, PyTorch, OpenAI
-- Cloud services and AI platforms: Azure, OpenSource
-
-This course structure is designed to empower students to tackle complex projects independently, enhancing their problem-solving skills and understanding of LLMs in diverse applications.
+---
