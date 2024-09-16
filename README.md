@@ -89,6 +89,7 @@ This course immerses students in the practical and theoretical aspects of Genera
 
 ### **Textbooks and Resources:**  
 - Primary Textbook: *[Building LLMs for Production, Enhancing LLM Abilities and Reliability with Prompting, Fine-Tuning, and RAG](https://learning.oreilly.com/library/view/building-llms-for/9798324731472/titlepage.xhtml)* by LOUIS-FRANÇOIS BOUCHARD.
+- Possible other Textbook: [Large Language Models: A Deep Dive: Bridging Theory and Practice](https://www.amazon.com/Large-Language-Models-Bridging-Practice/dp/3031656466?dplnkId=4b44b7d2-f540-40b9-9075-4502001e0d10&nodl=1)
 - Supplementary book materials: https://towardsai.net/book
 - Supplementary materials including research articles, online courses, and tutorials.  
 
