@@ -21,7 +21,10 @@ This course immerses students in the practical and theoretical aspects of Genera
 ### **Weekly Breakdown and Project Integration:**
 
 #### **Week 1: Introduction to Generative AI, LLMs & Key Terminology**
-- **Topics:** Introduction to Generative AI, Large Language Models (LLMs), key terminology (tokens, embeddings, prompts), real-world applications through a Survey of LLMs.
+- **Topics:** History of Language Models. 
+    - Take someone from no LM understanding up to today's state of the art. How did we get here?
+
+    - Introduction to Generative AI, Large Language Models (LLMs), key terminology (tokens, embeddings, prompts), real-world applications through a Survey of LLMs.
 - **Hands-on:** Tokenization and embedding exercises, basic prompt creation using LLM APIs.
 - **Overview:** Introduction to upcoming projects and individual objectives.
 
