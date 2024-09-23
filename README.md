@@ -8,7 +8,7 @@
 **Instructors:**
 
 ### **Course Description:**  
-This course immerses students in the practical and theoretical aspects of Generative AI and Large Language Models (LLMs), including graph-enhanced applications. Individual projects will focus on prompt engineering, retrieval-augmented generation (RAG) with graph databases, function calling, fine-tuning techniques, and creating LLM-based agents. The curriculum includes hands-on interaction with LLM APIs, integration into applications using Streamlit, JavaScript/Node.js, and ethical AI practices.
+This course immerses students in the practical and theoretical aspects of Generative AI and Large Language Models (LLMs), including graph-enhanced applications. Individual projects will focus on prompt engineering, retrieval-augmented generation (RAG) and graph, function calling, fine-tuning techniques, use of multi-modal, and creating LLM-based agents. The curriculum includes hands-on interaction with LLM APIs, integration into applications using Streamlit, JavaScript/Node.js, LangChain/LangGraph and ethical AI practices.
 
 ### **Course Objectives:**  
 1. Develop a deep understanding of LLMs and their applications.
