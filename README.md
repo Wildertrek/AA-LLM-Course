@@ -1,5 +1,3 @@
-Certainly! I have added LangGraph to the graph session in Week 12. Here is the updated syllabus:
-
 ---
 
 **Course Title:** Advanced Applications of Large Language Models (LLMs)  
