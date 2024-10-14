@@ -1,0 +1,21 @@
+// GPT Progression
+digraph {
+	GPT [label="GPT (2018)
+Parameters: 117M
+Initial Transformer-based language model"]
+	"GPT-2" [label="GPT-2 (2019)
+Parameters: 1.5B
+Wider language understanding"]
+	"GPT-3" [label="GPT-3 (2020)
+Parameters: 175B
+Large-scale capabilities"]
+	"GPT-4" [label="GPT-4 (2023)
+Parameters: Unknown
+Improved reasoning & multi-modal"]
+	"GPT-4o" [label="GPT-4o (2024)
+Optimized performance"]
+	GPT -> "GPT-2"
+	"GPT-2" -> "GPT-3"
+	"GPT-3" -> "GPT-4"
+	"GPT-4" -> "GPT-4o"
+}

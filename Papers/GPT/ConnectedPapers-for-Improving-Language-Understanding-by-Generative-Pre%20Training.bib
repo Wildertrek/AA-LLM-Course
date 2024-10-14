@@ -1,0 +1,456 @@
+@article{cd18800a0fe0b668a1cc19f2ec95b5003d0a5035,
+title = {Improving Language Understanding by Generative Pre-Training},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/cd18800a0fe0b668a1cc19f2ec95b5003d0a5035},
+abstract = {Natural language understanding comprises a wide range of diverse tasks such as textual entailment, question answering, semantic similarity assessment, and document classiﬁcation. Although large unlabeled text corpora are abundant, labeled data for learning these speciﬁc tasks is scarce, making it challenging for discriminatively trained models to perform adequately. We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text, followed by discriminative ﬁne-tuning on each speciﬁc task. In contrast to previous approaches, we make use of task-aware input transformations during ﬁne-tuning to achieve effective transfer while requiring minimal changes to the model architecture. We demonstrate the effectiveness of our approach on a wide range of benchmarks for natural language understanding. Our general task-agnostic model outperforms discriminatively trained models that use architectures speciﬁcally crafted for each task, signiﬁcantly improving upon the state of the art in 9 out of the 12 tasks studied. For instance, we achieve absolute improvements of 8.9% on commonsense reasoning (Stories Cloze Test), 5.7% on question answering (RACE), and 1.5% on textual entailment (MultiNLI).},
+author = {Alec Radford and Karthik Narasimhan},
+}
+
+@article{6fec3e579c7cd4f13bdabbee2b6ac2e8ff5941c6,
+title = {Unsupervised Cross-lingual Representation Learning at Scale},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/6fec3e579c7cd4f13bdabbee2b6ac2e8ff5941c6},
+abstract = {This paper shows that pretraining multilingual language models at scale leads to significant performance gains for a wide range of cross-lingual transfer tasks. We train a Transformer-based masked language model on one hundred languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross-lingual benchmarks, including +14.6% average accuracy on XNLI, +13% average F1 score on MLQA, and +2.4% F1 score on NER. XLM-R performs particularly well on low-resource languages, improving 15.7% in XNLI accuracy for Swahili and 11.4% for Urdu over previous XLM models. We also present a detailed empirical analysis of the key factors that are required to achieve these gains, including the trade-offs between (1) positive transfer and capacity dilution and (2) the performance of high and low resource languages at scale. Finally, we show, for the first time, the possibility of multilingual modeling without sacrificing per-language performance; XLM-R is very competitive with strong monolingual models on the GLUE and XNLI benchmarks. We will make our code and models publicly available.},
+author = {Alexis Conneau and Kartikay Khandelwal and Naman Goyal and Vishrav Chaudhary and Guillaume Wenzek and Francisco Guzmán and Edouard Grave and Myle Ott and Luke Zettlemoyer and Veselin Stoyanov},
+doi = {10.18653/v1/2020.acl-main.747},
+arxivid = {1911.02116},
+}
+
+@article{ee7b883e35d754ae4f71c21bb71f9f03e4ffbb2c,
+title = {Supervised Learning of Universal Sentence Representations from Natural Language Inference Data},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/ee7b883e35d754ae4f71c21bb71f9f03e4ffbb2c},
+abstract = {Many modern NLP systems rely on word embeddings, previously trained in an unsupervised manner on large corpora, as base features. Efforts to obtain embeddings for larger chunks of text, such as sentences, have however not been so successful. Several attempts at learning unsupervised representations of sentences have not reached satisfactory enough performance to be widely adopted. In this paper, we show how universal sentence representations trained using the supervised data of the Stanford Natural Language Inference datasets can consistently outperform unsupervised methods like SkipThought vectors on a wide range of transfer tasks. Much like how computer vision uses ImageNet to obtain features, which can then be transferred to other tasks, our work tends to indicate the suitability of natural language inference for transfer learning to other NLP tasks. Our encoder is publicly available.},
+author = {Alexis Conneau and Douwe Kiela and Holger Schwenk and Loïc Barrault and Antoine Bordes},
+journal = {ArXiv},
+volume = {abs/1705.02364},
+pages = {null},
+doi = {10.18653/v1/D17-1070},
+arxivid = {1705.02364},
+}
+
+@article{145b8b5d99a2beba6029418ca043585b90138d12,
+title = {MASS: Masked Sequence to Sequence Pre-training for Language Generation},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/145b8b5d99a2beba6029418ca043585b90138d12},
+abstract = {Pre-training and fine-tuning, e.g., BERT, have achieved great success in language understanding by transferring knowledge from rich-resource pre-training task to the low/zero-resource downstream tasks. Inspired by the success of BERT, we propose MAsked Sequence to Sequence pre-training (MASS) for the encoder-decoder based language generation tasks. MASS adopts the encoder-decoder framework to reconstruct a sentence fragment given the remaining part of the sentence: its encoder takes a sentence with randomly masked fragment (several consecutive tokens) as input, and its decoder tries to predict this masked fragment. In this way, MASS can jointly train the encoder and decoder to develop the capability of representation extraction and language modeling. By further fine-tuning on a variety of zero/low-resource language generation tasks, including neural machine translation, text summarization and conversational response generation (3 tasks and totally 8 datasets), MASS achieves significant improvements over the baselines without pre-training or with other pre-training methods. Specially, we achieve the state-of-the-art accuracy (37.5 in terms of BLEU score) on the unsupervised English-French translation, even beating the early attention-based supervised model.},
+author = {Kaitao Song and Xu Tan and Tao Qin and Jianfeng Lu and Tie-Yan Liu},
+journal = {ArXiv},
+volume = {abs/1905.02450},
+pages = {null},
+arxivid = {1905.02450},
+}
+
+@article{431ad023149287abc496d61570ba167fb014cf54,
+title = {Maximal Multiverse Learning for Promoting Cross-Task Generalization of Fine-Tuned Language Models},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/431ad023149287abc496d61570ba167fb014cf54},
+abstract = {Language modeling with BERT consists of two phases of (i) unsupervised pre-training on unlabeled text, and (ii) fine-tuning for a specific supervised task. We present a method that leverages the second phase to its fullest, by applying an extensive number of parallel classifier heads, which are enforced to be orthogonal, while adaptively eliminating the weaker heads during training. We conduct an extensive inter- and intra-dataset evaluation, showing that our method improves the generalization ability of BERT, sometimes leading to a +9% gain in accuracy. These results highlight the importance of a proper fine-tuning procedure, especially for relatively smaller-sized datasets. Our code is attached as supplementary.},
+author = {Itzik Malkiel},
+doi = {10.18653/v1/2021.eacl-main.14},
+}
+
+@article{f5a7da72496e2ca8edcd9f9123773012c010cfc6,
+title = {Neural Architectures for Named Entity Recognition},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/f5a7da72496e2ca8edcd9f9123773012c010cfc6},
+abstract = {Comunicacio presentada a la 2016 Conference of the North American Chapter of the Association for Computational Linguistics, celebrada a San Diego (CA, EUA) els dies 12 a 17 de juny 2016.},
+author = {Guillaume Lample and Miguel Ballesteros and Sandeep Subramanian and Kazuya Kawakami and Chris Dyer},
+doi = {10.18653/v1/N16-1030},
+arxivid = {1603.01360},
+}
+
+@article{2573af4e13d9a5dddb257d22cd38a600528d9a8b,
+title = {MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/2573af4e13d9a5dddb257d22cd38a600528d9a8b},
+abstract = {Natural Language Processing (NLP) has recently achieved great success by using huge pre-trained models with hundreds of millions of parameters. However, these models suffer from heavy model sizes and high latency such that they cannot be deployed to resource-limited mobile devices. In this paper, we propose MobileBERT for compressing and accelerating the popular BERT model. Like the original BERT, MobileBERT is task-agnostic, that is, it can be generically applied to various downstream NLP tasks via simple fine-tuning. Basically, MobileBERT is a thin version of BERT_LARGE, while equipped with bottleneck structures and a carefully designed balance between self-attentions and feed-forward networks. To train MobileBERT, we first train a specially designed teacher model, an inverted-bottleneck incorporated BERT_LARGE model. Then, we conduct knowledge transfer from this teacher to MobileBERT. Empirical studies show that MobileBERT is 4.3x smaller and 5.5x faster than BERT_BASE while achieving competitive results on well-known benchmarks. On the natural language inference tasks of GLUE, MobileBERT achieves a GLUE score of 77.7 (0.6 lower than BERT_BASE), and 62 ms latency on a Pixel 4 phone. On the SQuAD v1.1/v2.0 question answering task, MobileBERT achieves a dev F1 score of 90.0/79.2 (1.5/2.1 higher than BERT_BASE).},
+author = {Zhiqing Sun and Hongkun Yu and Xiaodan Song and Renjie Liu and Yiming Yang and Denny Zhou},
+doi = {10.18653/v1/2020.acl-main.195},
+arxivid = {2004.02984},
+}
+
+@article{05dd7254b632376973f3a1b4d39485da17814df5,
+title = {SQuAD: 100,000+ Questions for Machine Comprehension of Text},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/05dd7254b632376973f3a1b4d39485da17814df5},
+abstract = {We present the Stanford Question Answering Dataset (SQuAD), a new reading comprehension dataset consisting of 100,000+ questions posed by crowdworkers on a set of Wikipedia articles, where the answer to each question is a segment of text from the corresponding reading passage. We analyze the dataset to understand the types of reasoning required to answer the questions, leaning heavily on dependency and constituency trees. We build a strong logistic regression model, which achieves an F1 score of 51.0%, a significant improvement over a simple baseline (20%). However, human performance (86.8%) is much higher, indicating that the dataset presents a good challenge problem for future research. 
+The dataset is freely available at this https URL},
+author = {Pranav Rajpurkar and Jian Zhang and Konstantin Lopyrev and Percy Liang},
+doi = {10.18653/v1/D16-1264},
+arxivid = {1606.05250},
+}
+
+@article{5ded2b8c64491b4a67f6d39ce473d4b9347a672e,
+title = {A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/5ded2b8c64491b4a67f6d39ce473d4b9347a672e},
+abstract = {This paper introduces the Multi-Genre Natural Language Inference (MultiNLI) corpus, a dataset designed for use in the development and evaluation of machine learning models for sentence understanding. At 433k examples, this resource is one of the largest corpora available for natural language inference (a.k.a. recognizing textual entailment), improving upon available resources in both its coverage and difficulty. MultiNLI accomplishes this by offering data from ten distinct genres of written and spoken English, making it possible to evaluate systems on nearly the full complexity of the language, while supplying an explicit setting for evaluating cross-genre domain adaptation. In addition, an evaluation using existing machine learning models designed for the Stanford NLI corpus shows that it represents a substantially more difficult task than does that corpus, despite the two showing similar levels of inter-annotator agreement.},
+author = {Adina Williams and Nikita Nangia and Samuel R. Bowman},
+doi = {10.18653/v1/N18-1101},
+arxivid = {1704.05426},
+}
+
+@article{972706306f85b1bfb40c7d35c796ad5174eb0c9c,
+title = {DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/972706306f85b1bfb40c7d35c796ad5174eb0c9c},
+abstract = {This paper presents a new pre-trained language model, DeBERTaV3, which improves the original DeBERTa model by replacing mask language modeling (MLM) with replaced token detection (RTD), a more sample-efficient pre-training task. Our analysis shows that vanilla embedding sharing in ELECTRA hurts training efficiency and model performance. This is because the training losses of the discriminator and the generator pull token embeddings in different directions, creating the"tug-of-war"dynamics. We thus propose a new gradient-disentangled embedding sharing method that avoids the tug-of-war dynamics, improving both training efficiency and the quality of the pre-trained model. We have pre-trained DeBERTaV3 using the same settings as DeBERTa to demonstrate its exceptional performance on a wide range of downstream natural language understanding (NLU) tasks. Taking the GLUE benchmark with eight tasks as an example, the DeBERTaV3 Large model achieves a 91.37% average score, which is 1.37% over DeBERTa and 1.91% over ELECTRA, setting a new state-of-the-art (SOTA) among the models with a similar structure. Furthermore, we have pre-trained a multi-lingual model mDeBERTa and observed a larger improvement over strong baselines compared to English models. For example, the mDeBERTa Base achieves a 79.8% zero-shot cross-lingual accuracy on XNLI and a 3.6% improvement over XLM-R Base, creating a new SOTA on this benchmark. We have made our pre-trained models and inference code publicly available at https://github.com/microsoft/DeBERTa.},
+author = {Pengcheng He and Jianfeng Gao and Weizhu Chen},
+journal = {ArXiv},
+volume = {abs/2111.09543},
+pages = {null},
+arxivid = {2111.09543},
+}
+
+@article{3ee7b17cc627ac5bc99632a22ef820dc559393e6,
+title = {Deepening Hidden Representations from Pre-trained Language Models for Natural Language Understanding},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/3ee7b17cc627ac5bc99632a22ef820dc559393e6},
+abstract = {Transformer-based pre-trained language models have proven to be effective for learning contextualized language representation. However, current approaches only take advantage of the output of the encoder's final layer when fine-tuning the downstream tasks. We argue that only taking single layer's output restricts the power of pre-trained representation. Thus we deepen the representation learned by the model by fusing the hidden representation in terms of an explicit HIdden Representation Extractor (HIRE), which automatically absorbs the complementary representation with respect to the output from the final layer. Utilizing RoBERTa as the backbone encoder, our proposed improvement over the pre-trained models is shown effective on multiple natural language understanding tasks and help our model rival with the state-of-the-art models on the GLUE benchmark.},
+author = {Jie Yang and Hai Zhao},
+journal = {ArXiv},
+volume = {abs/1911.01940},
+pages = {null},
+arxivid = {1911.01940},
+}
+
+@article{d9f6ada77448664b71128bb19df15765336974a6,
+title = {SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/d9f6ada77448664b71128bb19df15765336974a6},
+abstract = {In the last year, new models and methods for pretraining and transfer learning have driven striking performance improvements across a range of language understanding tasks. The GLUE benchmark, introduced a little over one year ago, offers a single-number metric that summarizes progress on a diverse set of such tasks, but performance on the benchmark has recently surpassed the level of non-expert humans, suggesting limited headroom for further research. In this paper we present SuperGLUE, a new benchmark styled after GLUE with a new set of more difficult language understanding tasks, a software toolkit, and a public leaderboard. SuperGLUE is available at this http URL.},
+author = {Alex Wang and Yada Pruksachatkun and Nikita Nangia and Amanpreet Singh and Julian Michael and Felix Hill and Omer Levy and Samuel R. Bowman},
+journal = {ArXiv},
+volume = {abs/1905.00537},
+pages = {null},
+arxivid = {1905.00537},
+}
+
+@article{0fb0c9bcaae30c3f7af9ea1e672b09a6dc529a5b,
+title = {Development of Classification Method for Lecturer Area of Expertise Based on Scientific Publication Using BERT},
+year = {2024},
+url = {https://www.semanticscholar.org/paper/0fb0c9bcaae30c3f7af9ea1e672b09a6dc529a5b},
+abstract = {Implementing the Artificial Intelligence concept in higher education can be utilized in the context of Human Resource (HR) talent management. The lecturer portfolio provided by the Integrated Resource Information System (SISTER DIKTI) is expected to give an overview of the profiles of all lecturers and map competencies based on groups of fields of knowledge. However, the map of scientific fields based on SISTER data currently available is still subjective. The data is in the form of a group of lecturers' chosen fields of science, independently selected by each lecturer to recognize their expertise. This study discusses the problem of processing unstructured SISTER data. It looks for mapping solutions and classification methods by developing a strategy for classifying groups of scientific fields from unstructured data input. It is necessary to identify the suitability of the chosen field of science compared to that developed through the tri-dharma through identification based on a mapping of the group of fields that can be extracted from the tri-dharma activity, in this case, research represented by scientific publications recorded on SISTER. Therefore, we need an appropriate model to measure similarity, which can then be classified based on abstract documents and scientific publication titles for the classification of scientific fields using NLP based on classification run on DGX A100. This study aims to develop a classification method from titles and abstracts. Scientific publications contained in SISTER are unstructured data, so a corpus is formed to identify the lecturer's field of science. The results show that the classification method developed in this study can measure the similarity of lecturer publications based on abstracts and titles through a vector formation process based on bidirectional encoders and also produces a deep learning model to classify 24 categories of fields of science with an accuracy of 95,0345 percent on training data and 92.876 percent on the test data.},
+author = {Didi Rustam and Adang Suhendra and Suryadi Harmanto and Ruddy J. Suhatril and Dwi Fajar Saputra and Rusdan Tafsili and Rizky Prasetya},
+journal = {International Journal on Advanced Science, Engineering and Information Technology},
+volume = {null},
+pages = {null},
+doi = {10.18517/ijaseit.14.3.19893},
+}
+
+@article{256623ff025f36d343588bcd0b966c1fd26afcf8,
+title = {Looking for ELMo's friends: Sentence-Level Pretraining Beyond Language Modeling},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/256623ff025f36d343588bcd0b966c1fd26afcf8},
+abstract = {Work on the problem of contextualized word representation---the development of reusable neural network components for sentence understanding---has recently seen a surge of progress centered on the unsupervised pretraining task of language modeling with methods like ELMo. This paper contributes the first large-scale systematic study comparing different pretraining tasks in this context, both as complements to language modeling and as potential alternatives. The primary results of the study support the use of language modeling as a pretraining task and set a new state of the art among comparable models using multitask learning with language models. However, a closer look at these results reveals worryingly strong baselines and strikingly varied results across target tasks, suggesting that the widely-used paradigm of pretraining and freezing sentence encoders may not be an ideal platform for further work.},
+author = {Samuel R. Bowman and Ellie Pavlick and Edouard Grave and Benjamin Van Durme and Alex Wang and Jan Hula and Patrick Xia and R. Pappagari and R. Thomas McCoy and Roma Patel and Najoung Kim and Ian Tenney and Yinghui Huang and Katherin Yu and Shuning Jin and Berlin Chen},
+journal = {ArXiv},
+volume = {abs/1812.10860},
+pages = {null},
+arxivid = {1812.10860},
+}
+
+@article{93b8da28d006415866bf48f9a6e06b5242129195,
+title = {GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/451d4a16e425ecbf38c4b1cca0dcf5d9bec8255c},
+abstract = {Human ability to understand language is general, flexible, and robust. In contrast, most NLU models above the word level are designed for a specific task and struggle with out-of-domain data. If we aspire to develop models with understanding beyond the detection of superficial correspondences between inputs and outputs, then it is critical to develop a unified model that can execute a range of linguistic tasks across different domains. To facilitate research in this direction, we present the General Language Understanding Evaluation (GLUE, gluebenchmark.com): a benchmark of nine diverse NLU tasks, an auxiliary dataset for probing models for understanding of specific linguistic phenomena, and an online platform for evaluating and comparing models. For some benchmark tasks, training data is plentiful, but for others it is limited or does not match the genre of the test set. GLUE thus favors models that can represent linguistic knowledge in a way that facilitates sample-efficient learning and effective knowledge-transfer across tasks. While none of the datasets in GLUE were created from scratch for the benchmark, four of them feature privately-held test data, which is used to ensure that the benchmark is used fairly. We evaluate baselines that use ELMo (Peters et al., 2018), a powerful transfer learning technique, as well as state-of-the-art sentence representation models. The best models still achieve fairly low absolute scores. Analysis with our diagnostic dataset yields similarly weak performance over all phenomena tested, with some exceptions.},
+author = {Alex Wang and Amanpreet Singh and Julian Michael and Felix Hill and Omer Levy and Samuel R. Bowman},
+doi = {10.18653/v1/W18-5446},
+arxivid = {1804.07461},
+}
+
+@article{f04df4e20a18358ea2f689b4c129781628ef7fc1,
+title = {A large annotated corpus for learning natural language inference},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/f04df4e20a18358ea2f689b4c129781628ef7fc1},
+abstract = {Understanding entailment and contradiction is fundamental to understanding natural language, and inference about entailment and contradiction is a valuable testing ground for the development of semantic representations. However, machine learning research in this area has been dramatically limited by the lack of large-scale resources. To address this, we introduce the Stanford Natural Language Inference corpus, a new, freely available collection of labeled sentence pairs, written by humans doing a novel grounded task based on image captioning. At 570K pairs, it is two orders of magnitude larger than all other resources of its type. This increase in scale allows lexicalized classifiers to outperform some sophisticated existing entailment models, and it allows a neural network-based model to perform competitively on natural language inference benchmarks for the first time.},
+author = {Samuel R. Bowman and Gabor Angeli and Christopher Potts and Christopher D. Manning},
+doi = {10.18653/v1/D15-1075},
+arxivid = {1508.05326},
+}
+
+@article{57e849d0de13ed5f91d086936296721d4ff75a75,
+title = {LLaMA: Open and Efficient Foundation Language Models},
+year = {2023},
+url = {https://www.semanticscholar.org/paper/57e849d0de13ed5f91d086936296721d4ff75a75},
+abstract = {We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.},
+author = {Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
+journal = {ArXiv},
+volume = {abs/2302.13971},
+pages = {null},
+doi = {10.48550/arXiv.2302.13971},
+arxivid = {2302.13971},
+}
+
+@article{d56c1fc337fb07ec004dc846f80582c327af717c,
+title = {StructBERT: Incorporating Language Structures into Pre-training for Deep Language Understanding},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/d56c1fc337fb07ec004dc846f80582c327af717c},
+abstract = {Recently, the pre-trained language model, BERT (and its robustly optimized version RoBERTa), has attracted a lot of attention in natural language understanding (NLU), and achieved state-of-the-art accuracy in various NLU tasks, such as sentiment classification, natural language inference, semantic textual similarity and question answering. Inspired by the linearization exploration work of Elman [8], we extend BERT to a new model, StructBERT, by incorporating language structures into pre-training. Specifically, we pre-train StructBERT with two auxiliary tasks to make the most of the sequential order of words and sentences, which leverage language structures at the word and sentence levels, respectively. As a result, the new model is adapted to different levels of language understanding required by downstream tasks. The StructBERT with structural pre-training gives surprisingly good empirical results on a variety of downstream tasks, including pushing the state-of-the-art on the GLUE benchmark to 89.0 (outperforming all published models), the F1 score on SQuAD v1.1 question answering to 93.0, the accuracy on SNLI to 91.7.},
+author = {Wei Wang and Bin Bi and Ming Yan and Chen Wu and Zuyi Bao and Liwei Peng and Luo Si},
+journal = {ArXiv},
+volume = {abs/1908.04577},
+pages = {null},
+arxivid = {1908.04577},
+}
+
+@article{f6b51c8753a871dc94ff32152c00c01e94f90f09,
+title = {Efficient Estimation of Word Representations in Vector Space},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/f6b51c8753a871dc94ff32152c00c01e94f90f09},
+abstract = {We propose two novel model architectures for computing continuous vector
+representations of words from very large data sets. The quality of these
+representations is measured in a word similarity task, and the results are
+compared to the previously best performing techniques based on different types
+of neural networks. We observe large improvements in accuracy at much lower
+computational cost, i.e. it takes less than a day to learn high quality word
+vectors from a 1.6 billion words data set. Furthermore, we show that these
+vectors provide state-of-the-art performance on our test set for measuring
+syntactic and semantic word similarities.},
+author = {Tomas Mikolov and Kai Chen and G. Corrado and J. Dean},
+arxivid = {1301.3781},
+}
+
+@article{87f40e6f3022adbc1f1905e3e506abad05a9964f,
+title = {Distributed Representations of Words and Phrases and their Compositionality},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/87f40e6f3022adbc1f1905e3e506abad05a9964f},
+abstract = {The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships. In this paper we present several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significant speedup and also learn more regular word representations. We also describe a simple alternative to the hierarchical softmax called negative sampling. 
+ 
+An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of "Canada" and "Air" cannot be easily combined to obtain "Air Canada". Motivated by this example, we present a simple method for finding phrases in text, and show that learning good vector representations for millions of phrases is possible.},
+author = {Tomas Mikolov and I. Sutskever and Kai Chen and G. Corrado and J. Dean},
+arxivid = {1310.4546},
+}
+
+@article{75acc731bdd2b626edc74672a30da3bc51010ae8,
+title = {CTRL: A Conditional Transformer Language Model for Controllable Generation},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/75acc731bdd2b626edc74672a30da3bc51010ae8},
+abstract = {Large-scale language models show promising text generation capabilities, but users cannot easily control particular aspects of the generated text. We release CTRL, a 1.63 billion-parameter conditional transformer language model, trained to condition on control codes that govern style, content, and task-specific behavior. Control codes were derived from structure that naturally co-occurs with raw text, preserving the advantages of unsupervised learning while providing more explicit control over text generation. These codes also allow CTRL to predict which parts of the training data are most likely given a sequence. This provides a potential method for analyzing large amounts of data via model-based source attribution. We have released multiple full-sized, pretrained versions of CTRL at this https URL.},
+author = {N. Keskar and Bryan McCann and L. Varshney and Caiming Xiong and R. Socher},
+journal = {ArXiv},
+volume = {abs/1909.05858},
+pages = {null},
+arxivid = {1909.05858},
+}
+
+@article{a54b56af24bb4873ed0163b77df63b92bd018ddc,
+title = {DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/a54b56af24bb4873ed0163b77df63b92bd018ddc},
+abstract = {As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts. While most prior work investigated the use of distillation for building task-specific models, we leverage knowledge distillation during the pre-training phase and show that it is possible to reduce the size of a BERT model by 40%, while retaining 97% of its language understanding capabilities and being 60% faster. To leverage the inductive biases learned by larger models during pre-training, we introduce a triple loss combining language modeling, distillation and cosine-distance losses. Our smaller, faster and lighter model is cheaper to pre-train and we demonstrate its capabilities for on-device computations in a proof-of-concept experiment and a comparative on-device study.},
+author = {Victor Sanh and Lysandre Debut and Julien Chaumond and Thomas Wolf},
+journal = {ArXiv},
+volume = {abs/1910.01108},
+pages = {null},
+arxivid = {1910.01108},
+}
+
+@article{687bac2d3320083eb4530bf18bb8f8f721477600,
+title = {Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/687bac2d3320083eb4530bf18bb8f8f721477600},
+abstract = {Semantic word spaces have been very useful but cannot express the meaning of longer phrases in a principled way. Further progress towards understanding compositionality in tasks such as sentiment detection requires richer supervised training and evaluation resources and more powerful models of composition. To remedy this, we introduce a Sentiment Treebank. It includes fine grained sentiment labels for 215,154 phrases in the parse trees of 11,855 sentences and presents new challenges for sentiment compositionality. To address them, we introduce the Recursive Neural Tensor Network. When trained on the new treebank, this model outperforms all previous methods on several metrics. It pushes the state of the art in single sentence positive/negative classification from 80% up to 85.4%. The accuracy of predicting fine-grained sentiment labels for all phrases reaches 80.7%, an improvement of 9.7% over bag of features baselines. Lastly, it is the only model that can accurately capture the effects of negation and its scope at various tree levels for both positive and negative phrases.},
+author = {R. Socher and Alex Perelygin and Jean Wu and Jason Chuang and Christopher D. Manning and A. Ng and Christopher Potts},
+}
+
+@article{0c6602439185ad8268ebcd99d1ac4afd66fb4c7b,
+title = {Learning Robust, Transferable Sentence Representations for Text Classification},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/0c6602439185ad8268ebcd99d1ac4afd66fb4c7b},
+abstract = {Despite deep recurrent neural networks (RNNs) demonstrate strong performance in text classification, training RNN models are often expensive and requires an extensive collection of annotated data which may not be available. To overcome the data limitation issue, existing approaches leverage either pre-trained word embedding or sentence representation to lift the burden of training RNNs from scratch. In this paper, we show that jointly learning sentence representations from multiple text classification tasks and combining them with pre-trained word-level and sentence level encoders result in robust sentence representations that are useful for transfer learning. Extensive experiments and analyses using a wide range of transfer and linguistic tasks endorse the effectiveness of our approach.},
+author = {Wasi Uddin Ahmad and Xueying Bai and Nanyun Peng and Kai-Wei Chang},
+journal = {ArXiv},
+volume = {abs/1810.00681},
+pages = {null},
+arxivid = {1810.00681},
+}
+
+@article{90abbc2cf38462b954ae1b772fac9532e2ccd8b0,
+title = {Language Models are Few-Shot Learners},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0},
+abstract = {Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.},
+author = {Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and J. Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and T. Henighan and R. Child and A. Ramesh and Daniel M. Ziegler and Jeff Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Ma-teusz Litwin and Scott Gray and B. Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and I. Sutskever and Dario Amodei},
+journal = {ArXiv},
+volume = {abs/2005.14165},
+pages = {null},
+arxivid = {2005.14165},
+}
+
+@article{80cf2a6af4200ecfca1c18fc89de16148f1cd4bf,
+title = {Patient Knowledge Distillation for BERT Model Compression},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/80cf2a6af4200ecfca1c18fc89de16148f1cd4bf},
+abstract = {Pre-trained language models such as BERT have proven to be highly effective for natural language processing (NLP) tasks. However, the high demand for computing resources in training such models hinders their application in practice. In order to alleviate this resource hunger in large-scale model training, we propose a Patient Knowledge Distillation approach to compress an original large model (teacher) into an equally-effective lightweight shallow network (student). Different from previous knowledge distillation methods, which only use the output from the last layer of the teacher network for distillation, our student model patiently learns from multiple intermediate layers of the teacher model for incremental knowledge extraction, following two strategies: (i) PKD-Last: learning from the last k layers; and (ii) PKD-Skip: learning from every k layers. These two patient distillation schemes enable the exploitation of rich information in the teacher’s hidden layers, and encourage the student model to patiently learn from and imitate the teacher through a multi-layer distillation process. Empirically, this translates into improved results on multiple NLP tasks with a significant gain in training efficiency, without sacrificing model accuracy.},
+author = {S. Sun and Yu Cheng and Zhe Gan and Jingjing Liu},
+doi = {10.18653/v1/D19-1441},
+arxivid = {1908.09355},
+}
+
+@article{2232d067d91e97cb0fa5f79c3987849f340a13b5,
+title = {Scalable Attentive Sentence-Pair Modeling via Distilled Sentence Embedding},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/2232d067d91e97cb0fa5f79c3987849f340a13b5},
+abstract = {Recent state-of-the-art natural language understanding models, such as BERT and XLNet, score a pair of sentences (A and B) using multiple cross-attention operations - a process in which each word in sentence A attends to all words in sentence B and vice versa. As a result, computing the similarity between a query sentence and a set of candidate sentences, requires the propagation of all query-candidate sentence-pairs throughout a stack of cross-attention layers. This exhaustive process becomes computationally prohibitive when the number of candidate sentences is large. In contrast, sentence embedding techniques learn a sentence-to-vector mapping and compute the similarity between the sentence vectors via simple elementary operations. In this paper, we introduce Distilled Sentence Embedding (DSE) - a model that is based on knowledge distillation from cross-attentive models, focusing on sentence-pair tasks. The outline of DSE is as follows: Given a cross-attentive teacher model (e.g. a fine-tuned BERT), we train a sentence embedding based student model to reconstruct the sentence-pair scores obtained by the teacher model. We empirically demonstrate the effectiveness of DSE on five GLUE sentence-pair tasks. DSE significantly outperforms several ELMO variants and other sentence embedding methods, while accelerating computation of the query-candidate sentence-pairs similarities by several orders of magnitude, with an average relative degradation of 4.6% compared to BERT. Furthermore, we show that DSE produces sentence embeddings that reach state-of-the-art performance on universal sentence representation benchmarks. Our code is made publicly available at this https URL.},
+author = {Oren Barkan and Noam Razin and Itzik Malkiel and Ori Katz and Avi Caciularu and Noam Koenigstein},
+journal = {ArXiv},
+volume = {abs/1908.05161},
+pages = {null},
+doi = {10.1609/AAAI.V34I04.5722},
+arxivid = {1908.05161},
+}
+
+@article{3febb2bed8865945e7fddc99efd791887bb7e14f,
+title = {Deep Contextualized Word Representations},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/3febb2bed8865945e7fddc99efd791887bb7e14f},
+abstract = {We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.},
+author = {Matthew E. Peters and Mark Neumann and Mohit Iyyer and Matt Gardner and Christopher Clark and Kenton Lee and Luke Zettlemoyer},
+journal = {ArXiv},
+volume = {abs/1802.05365},
+pages = {null},
+doi = {10.18653/v1/N18-1202},
+arxivid = {1802.05365},
+}
+
+@article{094ff971d6a8b8ff870946c9b3ce5aa173617bfb,
+title = {PaLM: Scaling Language Modeling with Pathways},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/094ff971d6a8b8ff870946c9b3ce5aa173617bfb},
+abstract = {Large language models have been shown to achieve remarkable performance across a variety of natural language tasks using few-shot learning, which drastically reduces the number of task-specific training examples needed to adapt the model to a particular application. To further our understanding of the impact of scale on few-shot learning, we trained a 540-billion parameter, densely activated, Transformer language model, which we call Pathways Language Model PaLM. We trained PaLM on 6144 TPU v4 chips using Pathways, a new ML system which enables highly efficient training across multiple TPU Pods. We demonstrate continued benefits of scaling by achieving state-of-the-art few-shot learning results on hundreds of language understanding and generation benchmarks. On a number of these tasks, PaLM 540B achieves breakthrough performance, outperforming the finetuned state-of-the-art on a suite of multi-step reasoning tasks, and outperforming average human performance on the recently released BIG-bench benchmark. A significant number of BIG-bench tasks showed discontinuous improvements from model scale, meaning that performance steeply increased as we scaled to our largest model. PaLM also has strong capabilities in multilingual tasks and source code generation, which we demonstrate on a wide array of benchmarks. We additionally provide a comprehensive analysis on bias and toxicity, and study the extent of training data memorization with respect to model scale. Finally, we discuss the ethical considerations related to large language models and discuss potential mitigation strategies.},
+author = {Aakanksha Chowdhery and Sharan Narang and Jacob Devlin and Maarten Bosma and Gaurav Mishra and Adam Roberts and P. Barham and Hyung Won Chung and Charles Sutton and Sebastian Gehrmann and Parker Schuh and Kensen Shi and Sasha Tsvyashchenko and Joshua Maynez and Abhishek Rao and Parker Barnes and Yi Tay and Noam M. Shazeer and Vinodkumar Prabhakaran and Emily Reif and Nan Du and Ben Hutchinson and Reiner Pope and James Bradbury and Jacob Austin and M. Isard and Guy Gur-Ari and Pengcheng Yin and Toju Duke and Anselm Levskaya and Sanjay Ghemawat and Sunipa Dev and H. Michalewski and Xavier García and Vedant Misra and Kevin Robinson and Liam Fedus and Denny Zhou and Daphne Ippolito and D. Luan and Hyeontaek Lim and Barret Zoph and A. Spiridonov and Ryan Sepassi and David Dohan and Shivani Agrawal and Mark Omernick and Andrew M. Dai and Thanumalayan Sankaranarayana Pillai and Marie Pellat and Aitor Lewkowycz and Erica Moreira and R. Child and Oleksandr Polozov and Katherine Lee and Zongwei Zhou and Xuezhi Wang and Brennan Saeta and Mark Díaz and Orhan Firat and Michele Catasta and Jason Wei and K. Meier-Hellstern and D. Eck and J. Dean and Slav Petrov and Noah Fiedel},
+journal = {ArXiv},
+volume = {abs/2204.02311},
+pages = {240:1-240:113},
+arxivid = {2204.02311},
+}
+
+@article{06a1bf4a7333bbc78dbd7470666b33bd9e26882b,
+title = {Can You Tell Me How to Get Past Sesame Street? Sentence-Level Pretraining Beyond Language Modeling},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/06a1bf4a7333bbc78dbd7470666b33bd9e26882b},
+abstract = {Natural language understanding has recently seen a surge of progress with the use of sentence encoders like ELMo (Peters et al., 2018a) and BERT (Devlin et al., 2019) which are pretrained on variants of language modeling. We conduct the first large-scale systematic study of candidate pretraining tasks, comparing 19 different tasks both as alternatives and complements to language modeling. Our primary results support the use language modeling, especially when combined with pretraining on additional labeled-data tasks. However, our results are mixed across pretraining tasks and show some concerning trends: In ELMo’s pretrain-then-freeze paradigm, random baselines are worryingly strong and results vary strikingly across target tasks. In addition, fine-tuning BERT on an intermediate task often negatively impacts downstream transfer. In a more positive trend, we see modest gains from multitask training, suggesting the development of more sophisticated multitask and transfer learning techniques as an avenue for further research.},
+author = {Alex Wang and Jan Hula and Patrick Xia and R. Pappagari and R. Thomas McCoy and Roma Patel and Najoung Kim and Ian Tenney and Yinghui Huang and Katherin Yu and Shuning Jin and Berlin Chen and Benjamin Van Durme and Edouard Grave and Ellie Pavlick and Samuel R. Bowman},
+doi = {10.18653/v1/P19-1439},
+}
+
+@article{9405cc0d6169988371b2755e573cc28650d14dfe,
+title = {Language Models are Unsupervised Multitask Learners},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/9405cc0d6169988371b2755e573cc28650d14dfe},
+abstract = {Natural language processing tasks, such as question answering, machine translation, reading comprehension, and summarization, are typically approached with supervised learning on taskspecific datasets. We demonstrate that language models begin to learn these tasks without any explicit supervision when trained on a new dataset of millions of webpages called WebText. When conditioned on a document plus questions, the answers generated by the language model reach 55 F1 on the CoQA dataset matching or exceeding the performance of 3 out of 4 baseline systems without using the 127,000+ training examples. The capacity of the language model is essential to the success of zero-shot task transfer and increasing it improves performance in a log-linear fashion across tasks. Our largest model, GPT-2, is a 1.5B parameter Transformer that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot setting but still underfits WebText. Samples from the model reflect these improvements and contain coherent paragraphs of text. These findings suggest a promising path towards building language processing systems which learn to perform tasks from their naturally occurring demonstrations.},
+author = {Alec Radford and Jeff Wu and R. Child and D. Luan and Dario Amodei and I. Sutskever},
+}
+
+@article{0bb4cadc80c0afaf29c57518dc9c06f8fcfa5f38,
+title = {Semi-supervised sequence tagging with bidirectional language models},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/0bb4cadc80c0afaf29c57518dc9c06f8fcfa5f38},
+abstract = {Pre-trained word embeddings learned from unlabeled text have become a standard component of neural network architectures for NLP tasks. However, in most cases, the recurrent network that operates on word-level representations to produce context sensitive representations is trained on relatively little labeled data. In this paper, we demonstrate a general semi-supervised approach for adding pretrained context embeddings from bidirectional language models to NLP systems and apply it to sequence labeling tasks. We evaluate our model on two standard datasets for named entity recognition (NER) and chunking, and in both cases achieve state of the art results, surpassing previous systems that use other forms of transfer or joint learning with additional labeled data and task specific gazetteers.},
+author = {Matthew E. Peters and Bridger Waleed Ammar and Chandra Bhagavatula and Russell Power},
+journal = {ArXiv},
+volume = {abs/1705.00108},
+pages = {null},
+doi = {10.18653/v1/P17-1161},
+arxivid = {1705.00108},
+}
+
+@article{8659bf379ca8756755125a487c43cfe8611ce842,
+title = {To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/8659bf379ca8756755125a487c43cfe8611ce842},
+abstract = {While most previous work has focused on different pretraining objectives and architectures for transfer learning, we ask how to best adapt the pretrained model to a given target task. We focus on the two most common forms of adaptation, feature extraction (where the pretrained weights are frozen), and directly fine-tuning the pretrained model. Our empirical results across diverse NLP tasks with two state-of-the-art models show that the relative performance of fine-tuning vs. feature extraction depends on the similarity of the pretraining and target tasks. We explore possible explanations for this finding and provide a set of adaptation guidelines for the NLP practitioner.},
+author = {Matthew E. Peters and Sebastian Ruder and Noah A. Smith},
+journal = {ArXiv},
+volume = {abs/1903.05987},
+pages = {null},
+doi = {10.18653/v1/W19-4302},
+arxivid = {1903.05987},
+}
+
+@article{7a064df1aeada7e69e5173f7d4c8606f4470365b,
+title = {ALBERT: A Lite BERT for Self-supervised Learning of Language Representations},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/7a064df1aeada7e69e5173f7d4c8606f4470365b},
+abstract = {Increasing model size when pretraining natural language representations often results in improved performance on downstream tasks. However, at some point further model increases become harder due to GPU/TPU memory limitations and longer training times. To address these problems, we present two parameter-reduction techniques to lower memory consumption and increase the training speed of BERT. Comprehensive empirical evidence shows that our proposed methods lead to models that scale much better compared to the original BERT. We also use a self-supervised loss that focuses on modeling inter-sentence coherence, and show it consistently helps downstream tasks with multi-sentence inputs. As a result, our best model establishes new state-of-the-art results on the GLUE, RACE, and \squad benchmarks while having fewer parameters compared to BERT-large. The code and the pretrained models are available at this https URL.},
+author = {Zhenzhong Lan and Mingda Chen and Sebastian Goodman and Kevin Gimpel and Piyush Sharma and Radu Soricut},
+journal = {ArXiv},
+volume = {abs/1909.11942},
+pages = {null},
+arxivid = {1909.11942},
+}
+
+@article{f37e1b62a767a307c046404ca96bc140b3e68cb5,
+title = {GloVe: Global Vectors for Word Representation},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/f37e1b62a767a307c046404ca96bc140b3e68cb5},
+abstract = {Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new global logbilinear regression model that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods. Our model efficiently leverages statistical information by training only on the nonzero elements in a word-word cooccurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model produces a vector space with meaningful substructure, as evidenced by its performance of 75% on a recent word analogy task. It also outperforms related models on similarity tasks and named entity recognition.},
+author = {Jeffrey Pennington and R. Socher and Christopher D. Manning},
+doi = {10.3115/v1/D14-1162},
+}
+
+@article{9e10e2cae05b2906330eb7dde2f27042966413b1,
+title = {Unifying Question Answering and Text Classification via Span Extraction},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/9e10e2cae05b2906330eb7dde2f27042966413b1},
+abstract = {Even as pre-trained language encoders such as BERT are shared across many tasks, the output layers of question answering and text classification models are significantly different. Span decoders are frequently used for question answering and fixed-class, classification layers for text classification. We show that this distinction is not necessary, and that both can be unified as span extraction. A unified, span-extraction approach leads to superior or comparable performance in multi-task learning, low-data and supplementary supervised pretraining experiments on several text classification and question answering benchmarks.},
+author = {N. Keskar and Bryan McCann and Caiming Xiong and R. Socher},
+journal = {ArXiv},
+volume = {abs/1904.09286},
+pages = {null},
+arxivid = {1904.09286},
+}
+
+@article{1e077413b25c4d34945cc2707e17e46ed4fe784a,
+title = {Universal Language Model Fine-tuning for Text Classification},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/1e077413b25c4d34945cc2707e17e46ed4fe784a},
+abstract = {Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100 times more data. We open-source our pretrained models and code.},
+author = {Jeremy Howard and Sebastian Ruder},
+doi = {10.18653/v1/P18-1031},
+}
+
+@article{475354f10798f110d34792b6d88f31d6d5cb099e,
+title = {Automatically Constructing a Corpus of Sentential Paraphrases},
+year = {2005},
+url = {https://www.semanticscholar.org/paper/475354f10798f110d34792b6d88f31d6d5cb099e},
+abstract = {An obstacle to research in automatic paraphrase identification and generation is the lack of large-scale, publiclyavailable labeled corpora of sentential paraphrases. This paper describes the creation of the recently-released Microsoft Research Paraphrase Corpus, which contains 5801 sentence pairs, each hand-labeled with a binary judgment as to whether the pair constitutes a paraphrase. The corpus was created using heuristic extraction techniques in conjunction with an SVM-based classifier to select likely sentence-level paraphrases from a large corpus of topicclustered news data. These pairs were then submitted to human judges, who confirmed that 67% were in fact semantically equivalent. In addition to describing the corpus itself, we explore a number of issues that arose in defining guidelines for the human raters.},
+author = {W. Dolan and Chris Brockett},
+}
+
+@article{204e3073870fae3d05bcbc2f6a8e263d9b72e776,
+title = {Attention is All you Need},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776},
+abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
+author = {Ashish Vaswani and Noam M. Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+arxivid = {1706.03762},
+}
+
+@article{99699548f2ecf8212530e1f4621b7bd888dd9525,
+title = {MML: Maximal Multiverse Learning for Robust Fine-Tuning of Language Models},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/99699548f2ecf8212530e1f4621b7bd888dd9525},
+abstract = {Recent state-of-the-art language models utilize a two-phase training procedure comprised of (i) unsupervised pre-training on unlabeled text, and (ii) fine-tuning for a specific supervised task. More recently, many studies have been focused on trying to improve these models by enhancing the pre-training phase, either via better choice of hyperparameters or by leveraging an improved formulation. However, the pre-training phase is computationally expensive and often done on private datasets. In this work, we present a method that leverages BERT's fine-tuning phase to its fullest, by applying an extensive number of parallel classifier heads, which are enforced to be orthogonal, while adaptively eliminating the weaker heads during training. Our method allows the model to converge to an optimal number of parallel classifiers, depending on the given dataset at hand. 
+We conduct an extensive inter- and intra-dataset evaluations, showing that our method improves the robustness of BERT, sometimes leading to a +9\% gain in accuracy. These results highlight the importance of a proper fine-tuning procedure, especially for relatively smaller-sized datasets. Our code is attached as supplementary and our models will be made completely public.},
+author = {Itzik Malkiel and Lior Wolf},
+journal = {ArXiv},
+volume = {abs/1911.06182},
+pages = {null},
+arxivid = {1911.06182},
+}
+
+@article{ec4eba83f6b3266d9ae7cabb2b2cb1518f727edc,
+title = {Cross-lingual Language Model Pretraining},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/ec4eba83f6b3266d9ae7cabb2b2cb1518f727edc},
+abstract = {Recent studies have demonstrated the efficiency of generative pretraining for English natural language understanding. In this work, we extend this approach to multiple languages and show the effectiveness of cross-lingual pretraining. We propose two methods to learn cross-lingual language models (XLMs): one unsupervised that only relies on monolingual data, and one supervised that leverages parallel data with a new cross-lingual language model objective. We obtain state-of-the-art results on cross-lingual classification, unsupervised and supervised machine translation. On XNLI, our approach pushes the state of the art by an absolute gain of 4.9% accuracy. On unsupervised machine translation, we obtain 34.3 BLEU on WMT’16 German-English, improving the previous state of the art by more than 9 BLEU. On supervised machine translation, we obtain a new state of the art of 38.5 BLEU on WMT’16 Romanian-English, outperforming the previous best approach by more than 4 BLEU. Our code and pretrained models will be made publicly available.},
+author = {Guillaume Lample and Alexis Conneau},
+journal = {ArXiv},
+volume = {abs/1901.07291},
+pages = {null},
+arxivid = {1901.07291},
+}
