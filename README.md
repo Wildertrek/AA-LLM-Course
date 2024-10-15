@@ -1,5 +1,3 @@
----
-
 **Course Title:** Advanced Applications of Large Language Models (LLMs)  
 **Course Number:** COSC 650  
 **Semester:** Fall 2024  
@@ -22,7 +20,12 @@ This course immerses students in the practical and theoretical aspects of Genera
 - **Topics:** History of Language Models.
   - Taking someone from no LM understanding up to today's state of the art. How did we get here?
   - Introduction to Generative AI, Large Language Models (LLMs), key terminology (tokens, embeddings, prompts), real-world applications through a survey of LLMs.
-- **Hands-on:** Tokenization and embedding exercises, basic prompt creation using LLM APIs.
+  - Discuss the families of LLMs and how each evolved
+     - OpenAI GPTs
+     - Meta Llama
+     - Google Palm
+     - Anthropic
+- **Hands-on:** Setup, tokenization and embedding exercises, basic prompt creation using LLM APIs.
 - **Overview:** Introduction to upcoming projects and individual objectives.
 
 #### **Week 2: API Usage and LLM Interaction**
@@ -103,7 +106,6 @@ This course immerses students in the practical and theoretical aspects of Genera
 - Graph databases: Neo4j  
 - Cloud services and AI platforms: Azure, Open Source  
 
----
 
 **Notes on Changes:**
 
