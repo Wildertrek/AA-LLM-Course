@@ -28,8 +28,8 @@ This course immerses students in the practical and theoretical aspects of Genera
 - **Hands-on:** Setup, tokenization and embedding exercises, basic prompt creation using LLM APIs.
 - **Overview:** Introduction to upcoming projects and individual objectives.
 
-#### **Week 2: API Usage and LLM Interaction**
-- **Topics:** APIs for LLM interaction (OpenAI, Azure OpenAI), calling LLM APIs with various parameters, exploring API-driven generation tasks.
+#### **Week 2: API Usage, LLM Interaction and Evaluation**
+- **Topics:** APIs for LLM interaction (OpenAI, Azure OpenAI), calling LLM APIs with various parameters, exploring API-driven generation tasks and then evaluating the LLMs performance.
 - **Hands-on:** Calling LLM APIs for text generation and handling API responses.
 
 #### **Week 3: Prompt Engineering Best Practices**
