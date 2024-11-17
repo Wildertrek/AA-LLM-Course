@@ -13,3 +13,6 @@ Notebooks/Week-2/.ipynb_checkpoints/evaluation_summary_comparison-checkpoint.jso
 Notebooks/Week-2/.ipynb_checkpoints/temp_test_run_data-checkpoint.json
 /Notebooks/Week-3/.ipynb_checkpoints
 /Notebooks/Week-4/.ipynb_checkpoints
+Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/0_simple-graph-checkpoint.ipynb
+Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/4_agent-memory-checkpoint.ipynb
+*.ipynb_checkpoints
