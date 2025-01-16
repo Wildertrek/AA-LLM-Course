@@ -16,3 +16,4 @@ Notebooks/Week-2/.ipynb_checkpoints/temp_test_run_data-checkpoint.json
 Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/0_simple-graph-checkpoint.ipynb
 Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/4_agent-memory-checkpoint.ipynb
 *.ipynb_checkpoints
+.DS_Store
