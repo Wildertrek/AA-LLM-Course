@@ -2,6 +2,8 @@
 
 [HuggingFace Model Card Reference](https://huggingface.co/docs/hub/en/model-cards)
 
+[model cards paper](https://arxiv.org/pdf/1810.03993)
+
 ## **1. Model Details**
 - **Model Name:** [Model Name]
 - **Version:** [Version Number]
