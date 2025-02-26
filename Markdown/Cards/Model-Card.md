@@ -1,5 +1,7 @@
 **Universal Model Card Template**
 
+[HuggingFace Model Card Reference](https://huggingface.co/docs/hub/en/model-cards)
+
 ## **1. Model Details**
 - **Model Name:** [Model Name]
 - **Version:** [Version Number]
