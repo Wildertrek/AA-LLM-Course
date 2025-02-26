@@ -108,3 +108,91 @@ Here, provide quick references to other important documentation. (Hyperlink or r
 ---
 
 Use this template as a flexible starting point. Your **AI Use-case Card** acts as the “hub” for stakeholders to understand not only *what* the application does, but also *how* and *why*, with direct connections to the deeper technical and ethical details housed in the Model Card, Dataset Card, Agent Card, and other specialized documentation.
+
+
+
+----
+
+Below is a short overview of **additional cards** (or documentation artifacts) you might consider creating so that your **AI use-case catalog** is comprehensive. Each “card” focuses on a different facet of the AI lifecycle, letting you track, share, and govern all relevant details efficiently.
+
+---
+
+## 1. **Annotation / Labeling Card** 
+**Purpose:** Document how data labeling or annotation was performed, who performed it (e.g., domain experts vs. crowdworkers), the guidelines used, inter-annotator agreement, and any quality assurance steps.
+
+**Why It’s Helpful:**
+- Establishes the reliability of labeled data (especially critical for supervised learning).
+- Highlights ethical considerations (e.g., fair compensation, bias in labeling).
+
+---
+
+## 2. **Evaluation / Testing Card**
+**Purpose:** Detail how the AI system (or agent) is evaluated—covering benchmarks, internal tests, any external audits, and the metrics used.
+
+**Why It’s Helpful:**
+- Avoids scattering test results across multiple documents.
+- Communicates standard procedures for performance, reliability, and safety validation.
+
+---
+
+## 3. **Security & Privacy Card**
+**Purpose:** Describe security controls, privacy protections, threat-modeling outcomes, and compliance with frameworks like GDPR, HIPAA, or FedRAMP.
+
+**Why It’s Helpful:**
+- Provides a single reference for security measures and data privacy considerations.
+- Facilitates compliance reviews and inspires stakeholder trust in safe AI operations.
+
+---
+
+## 4. **Deployment & Monitoring Card**
+**Purpose:** Outline exactly how (and where) the model or agent is deployed, plus the monitoring/logging strategy for production systems. Include versioning details and rollback procedures.
+
+**Why It’s Helpful:**
+- Ensures consistent dev-to-production handoff.
+- Helps teams quickly identify and debug real-world failures or anomalies.
+
+---
+
+## 5. **Ethical & Governance Card**
+**Purpose:** Summarize your organization’s internal ethical review process and governance structures for AI. Include frameworks used (e.g., “human-in-the-loop,” “bias audits”) and how decisions around high-risk uses are made.
+
+**Why It’s Helpful:**
+- Demonstrates proactive risk management and a commitment to responsible AI.
+- Provides transparency about escalation paths and accountability if ethical issues arise.
+
+---
+
+## 6. **Tooling / Integration Card**
+**Purpose:** Capture details on the third-party APIs, plugins, or modules your AI system relies on. List their capabilities, access methods, and potential hazards (e.g., how a tool might be misused).
+
+**Why It’s Helpful:**
+- Centralizes knowledge for dev teams integrating the system further.
+- Aids in security reviews (particularly for AI agents that can autonomously call external tools).
+
+---
+
+## 7. **Annotation & Feedback Loop Card** (For AI Agents)
+**Purpose:** If your AI agent continuously learns or updates from new data or interactions (online learning, reinforcement, feedback), detail that mechanism here.  
+
+**Why It’s Helpful:**
+- Offers clarity on how frequently the agent is updated and re-trained.
+- Ensures all stakeholders understand the feedback process and potential drift over time.
+
+---
+
+## 8. **User / Operator Guidance Card**
+**Purpose:** Provide best practices, disclaimers, or warnings for end-users. Clarify limitations, typical failure modes, and instructions on safe usage.
+
+**Why It’s Helpful:**
+- Reduces misuse by educating users about the AI’s constraints.
+- Sets realistic expectations regarding performance and safety.
+
+---
+
+## Pulling It All Together
+
+1. **AI Use-case Card** serves as the **“hub”** describing the overall application, its audience, and business context.
+2. **Model Card**, **Dataset Card**, **Agent Card**, plus the **additional cards** above each zoom in on specific artifacts or processes.
+3. When linking these cards, cross-reference them to help any stakeholder quickly navigate from high-level overviews (Use-case Card) down to technical or ethical details (e.g., Evaluation Card, Security & Privacy Card).
+
+By assembling this **multi-card documentation** strategy, you create a rich **catalog** that meets a wide range of stakeholder needs, from developers who want technical deep dives to policymakers or auditors focused on safety and governance. Each card is modular yet interlinked, enhancing transparency, accountability, and maintainability throughout your AI lifecycle.
