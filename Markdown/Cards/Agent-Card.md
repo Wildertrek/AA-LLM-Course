@@ -1,4 +1,4 @@
-Below is a **generic AI Agent Card** template, drawing on key elements from the AI Agent Index. It’s designed to capture both **technical** and **safety** details of an “agentic” AI system, as well as provide essential context for users, developers, auditors, and policymakers. You can adapt, add, or remove fields as needed for your organization or project.
+Below is a **generic AI Agent Card** template, drawing on key elements from [The AI Agent Index](https://arxiv.org/abs/2502.01635). It’s designed to capture both **technical** and **safety** details of an “agentic” AI system, as well as provide essential context for users, developers, auditors, and policymakers. You can adapt, add, or remove fields as needed for your organization or project.
 
 ---
 
