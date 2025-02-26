@@ -1,4 +1,4 @@
-Below is a **generic Dataset Card** template you can use to describe any dataset used in your AI pipelines. Tailor each section to your specific dataset and organizational requirements. This template follows many best practices inspired by open-source standards (such as the [Hugging Face Dataset Card format](https://huggingface.co/docs/datasets/share_dataset_card) and others).
+Below is a **generic Dataset Card** template you can use to describe any dataset used in your AI pipelines. Tailor each section to your specific dataset and organizational requirements. This template follows many best practices inspired by open-source standards (such as the [Hugging Face Dataset Card format](https://huggingface.co/docs/hub/en/datasets-cards#dataset-card-metadata) and others).
 
 ---
 
