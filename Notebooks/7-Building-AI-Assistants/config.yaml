@@ -1,0 +1,2 @@
+model: "gpt-4o"
+system_message: "You are a helpful, friendly, and concise assistant."
