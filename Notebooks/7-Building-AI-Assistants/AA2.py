@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import re
 import requests
 from dotenv import load_dotenv
 import google.generativeai as genai
@@ -59,21 +58,15 @@ def query_tavily(search_query: str):
     except Exception as e:
         return [f"Error querying Tavily: {e}"]
 
-# Streamlit App Title
-st.title("LLM & Agent Interaction App")
+def generate_follow_up_queries(prompt: str, response: str):
+    """Generate LLM-based follow-up queries based on the original query and response."""
+    follow_up_prompt = f"Based on the following user query and response, suggest three relevant follow-up questions:\n\nUser Query: {prompt}\n\nResponse: {response}\n\nFollow-up Questions:"
+    try:
+        return gpt4o_chat.invoke([HumanMessage(content=follow_up_prompt)]).content.split("\n")
+    except Exception as e:
+        return [f"Error generating follow-up questions: {e}"]
 
-# Sidebar Configuration
-st.sidebar.header("Configuration")
-llm_provider = st.sidebar.selectbox("Choose LLM Provider", ["GPT-4o", "GPT-4o-mini", "Claude-3.5-Sonnet", "Gemini-2.0-Flash", "Grok-2-Latest"])
-user_persona = st.sidebar.text_input("User Persona", "General User")
-system_persona = st.sidebar.text_input("System Persona", "AI Assistant")
-response_length = st.sidebar.radio("Response Length", ["Succinct", "Standard", "Thorough"], index=1)
-temperature_setting = st.sidebar.radio("Conversation Type (Temperature)", ["Creative", "Balanced", "Precise"], index=1)
-num_references = st.sidebar.slider("Number of Referenced Responses", 1, 10, 5)
-follow_up_enabled = st.sidebar.checkbox("Enable Follow-up Queries")
-
-user_input = st.text_area("Enter your prompt:", key="user_input")
-
+# Function to process user query
 def process_query():
     if not st.session_state.user_input:
         st.warning("Please enter a prompt before submitting.")
@@ -95,47 +88,80 @@ def process_query():
             else:
                 response = "Invalid model selection."
             
+            st.subheader("Response")
             st.success(f"{system_persona}: {response}")
             
-            # Store response in session state for copying
-            st.session_state.response_text = f"**{system_persona}:**\n\n{response}"
-            st.code(st.session_state.response_text, language='markdown')
-            
-            # Provide a copy button
-            if st.button("Copy Response"):
-                st.session_state.clipboard = st.session_state.response_text
-                st.success("Response copied! You can paste it anywhere.")
-            
-            # Fetch referenced responses if requested
-            if num_references > 1:
-                st.subheader("Referenced Responses")
-                search_results = query_tavily(st.session_state.user_input)[:num_references]  # Get real search results
-                if search_results:
-                    for idx, result in enumerate(search_results):
-                        st.markdown(f"**{idx+1}. [{result['title']}]({result['url']})**")
-                        st.write(f"{result['content']}")
-                else:
-                    st.write("No additional references found.")
-            
             if follow_up_enabled:
-                st.write("Suggested Follow-up Queries:")
-                st.write("- Can you expand on that?")
-                st.write("- What are some real-world applications?")
-                st.write("- How does this compare to other approaches?")
+                st.subheader("Follow-up Questions")
+                follow_up_questions = generate_follow_up_queries(st.session_state.user_input, response)
+                # Filter out empty strings and strip whitespace from each question
+                filtered_questions = [q.strip() for q in follow_up_questions if q.strip()]
+                for question in filtered_questions:
+                    st.write(f"- {question}")
+                
         except Exception as e:
             st.error(f"Error: {e}")
 
-st.text_area("Enter your prompt:", key="user_input", on_change=process_query)
+# Streamlit App Title
+st.title("AI Assistant")
 
-if st.button("Submit Query"):
+# Sidebar Configuration
+st.sidebar.header("Configuration")
+llm_provider = st.sidebar.selectbox("Choose LLM Provider", ["GPT-4o", "GPT-4o-mini", "Claude-3.5-Sonnet", "Gemini-2.0-Flash", "Grok-2-Latest"])
+user_persona = st.sidebar.text_input("User Persona", "General User")
+system_persona = st.sidebar.text_input("System Persona", "AI Assistant")
+response_length = st.sidebar.radio("Response Length", ["Succinct", "Standard", "Thorough"], index=1)
+temperature_setting = st.sidebar.radio("Conversation Type (Temperature)", ["Creative", "Balanced", "Precise"], index=1)
+num_references = st.sidebar.slider("Number of Referenced Responses", 1, 10, 5)
+follow_up_enabled = st.sidebar.checkbox("Enable Follow-up Queries")
+
+# Initialize session state variables
+if "process_query" not in st.session_state:
+    st.session_state.process_query = False
+if "web_search" not in st.session_state:
+    st.session_state.web_search = False
+if "user_input" not in st.session_state:
+    st.session_state.user_input = ""
+
+# Query Interface using a form with Ctrl+Enter support
+st.subheader("Enter Your Query")
+
+with st.form(key="query_form"):
+    st.text_area("Enter your prompt:", key="user_input")
+    
+    # Create two columns for the buttons
+    col1, col2 = st.columns([0.5, 0.5])
+    
+    with col1:
+        submit_button = st.form_submit_button("Submit Query")
+    
+    with col2:
+        web_search_button = st.form_submit_button("Web Search with Tavily")
+    
+    if submit_button:
+        st.session_state.process_query = True
+    
+    if web_search_button:
+        if not st.session_state.user_input:
+            st.warning("Please enter a search query before submitting.")
+        else:
+            search_results = query_tavily(st.session_state.user_input)
+            st.session_state.search_results = search_results
+            st.session_state.web_search = True
+
+# Process the query if requested
+if st.session_state.process_query:
     process_query()
+    st.session_state.process_query = False
 
-if st.button("Web Search with Tavily"):
-    if not st.session_state.user_input:
-        st.warning("Please enter a search query before submitting.")
-    else:
-        search_results = query_tavily(st.session_state.user_input)
-        st.subheader("Tavily Search Results:")
+# Display search results if requested
+if st.session_state.web_search and hasattr(st.session_state, 'search_results'):
+    st.subheader("Tavily Search Results:")
+    search_results = st.session_state.search_results
+    if search_results:
         for idx, result in enumerate(search_results[:5]):  # Show top 5 results
             st.markdown(f"**{idx+1}. [{result['title']}]({result['url']})**")
             st.write(f"{result['content']}")
+    else:
+        st.write("No relevant search results found.")
+    st.session_state.web_search = False

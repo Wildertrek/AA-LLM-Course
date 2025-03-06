@@ -19,7 +19,7 @@ def get_env_var(var: str):
     return value
 
 # Load API keys
-openai_api_key = get_env_var("OPENAI_COURSE_KEY_2")  
+openai_api_key = get_env_var("OPENAI_COURSE_KEY")  
 gemini_api_key = get_env_var("GEMINI_API_KEY")  
 anthropic_api_key = get_env_var("ANTHROPIC_API_KEY")  
 xai_api_key = get_env_var("GROK_API_KEY")

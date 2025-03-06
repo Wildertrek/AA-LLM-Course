@@ -55,10 +55,6 @@ def query_tavily(search_query: str):
         payload = {"query": search_query}
         response = requests.post(url, json=payload, headers=headers)
         data = response.json()
-        
-        # Debugging: Display raw response in Streamlit
-        st.write("Tavily Raw Response:", data)
-        
         return data.get("results", [])
     except Exception as e:
         return [f"Error querying Tavily: {e}"]
@@ -76,10 +72,10 @@ temperature_setting = st.sidebar.radio("Conversation Type (Temperature)", ["Crea
 num_references = st.sidebar.slider("Number of Referenced Responses", 1, 10, 5)
 follow_up_enabled = st.sidebar.checkbox("Enable Follow-up Queries")
 
-user_input = st.text_area("Enter your prompt:")
+user_input = st.text_area("Enter your prompt:", key="user_input")
 
-if st.button("Submit Query"):
-    if not user_input:
+def process_query():
+    if not st.session_state.user_input:
         st.warning("Please enter a prompt before submitting.")
     else:
         try:
@@ -87,27 +83,37 @@ if st.button("Submit Query"):
             temperature = temperature_values[temperature_setting]
             
             if llm_provider == "GPT-4o":
-                response = gpt4o_chat.invoke([HumanMessage(content=user_input)], temperature=temperature).content
+                response = gpt4o_chat.invoke([HumanMessage(content=st.session_state.user_input)], temperature=temperature).content
             elif llm_provider == "GPT-4o-mini":
-                response = gpt4o_mini_chat.invoke([HumanMessage(content=user_input)], temperature=temperature).content
+                response = gpt4o_mini_chat.invoke([HumanMessage(content=st.session_state.user_input)], temperature=temperature).content
             elif llm_provider == "Claude-3.5-Sonnet":
-                response = claude_chat.invoke(user_input).content
+                response = claude_chat.invoke(st.session_state.user_input).content
             elif llm_provider == "Gemini-2.0-Flash":
-                response = gemini_model.generate_content(user_input).text
+                response = gemini_model.generate_content(st.session_state.user_input).text
             elif llm_provider == "Grok-2-Latest":
-                response = query_grok(user_input)
+                response = query_grok(st.session_state.user_input)
             else:
                 response = "Invalid model selection."
             
             st.success(f"{system_persona}: {response}")
             
+            # Store response in session state for copying
+            st.session_state.response_text = f"**{system_persona}:**\n\n{response}"
+            st.code(st.session_state.response_text, language='markdown')
+            
+            # Provide a copy button
+            if st.button("Copy Response"):
+                st.session_state.clipboard = st.session_state.response_text
+                st.success("Response copied! You can paste it anywhere.")
+            
             # Fetch referenced responses if requested
             if num_references > 1:
                 st.subheader("Referenced Responses")
-                search_results = query_tavily(user_input)[:num_references]  # Get real search results
+                search_results = query_tavily(st.session_state.user_input)[:num_references]  # Get real search results
                 if search_results:
                     for idx, result in enumerate(search_results):
-                        st.write(f"Reference {idx+1}: {result}")
+                        st.markdown(f"**{idx+1}. [{result['title']}]({result['url']})**")
+                        st.write(f"{result['content']}")
                 else:
                     st.write("No additional references found.")
             
@@ -119,11 +125,17 @@ if st.button("Submit Query"):
         except Exception as e:
             st.error(f"Error: {e}")
 
+st.text_area("Enter your prompt:", key="user_input", on_change=process_query)
+
+if st.button("Submit Query"):
+    process_query()
+
 if st.button("Web Search with Tavily"):
-    if not user_input:
+    if not st.session_state.user_input:
         st.warning("Please enter a search query before submitting.")
     else:
-        search_results = query_tavily(user_input)
+        search_results = query_tavily(st.session_state.user_input)
         st.subheader("Tavily Search Results:")
         for idx, result in enumerate(search_results[:5]):  # Show top 5 results
-            st.write(f"{idx+1}. {result}")
+            st.markdown(f"**{idx+1}. [{result['title']}]({result['url']})**")
+            st.write(f"{result['content']}")

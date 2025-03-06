@@ -60,7 +60,7 @@ def query_tavily(search_query: str):
         return [f"Error querying Tavily: {e}"]
 
 # Streamlit App Title
-st.title("LLM & Agent Interaction App")
+st.title("AI Assistant")
 
 # Sidebar Configuration
 st.sidebar.header("Configuration")
@@ -72,7 +72,8 @@ temperature_setting = st.sidebar.radio("Conversation Type (Temperature)", ["Crea
 num_references = st.sidebar.slider("Number of Referenced Responses", 1, 10, 5)
 follow_up_enabled = st.sidebar.checkbox("Enable Follow-up Queries")
 
-user_input = st.text_area("Enter your prompt:", key="user_input")
+if "user_input" not in st.session_state:
+    st.session_state.user_input = ""
 
 def process_query():
     if not st.session_state.user_input:
@@ -125,7 +126,7 @@ def process_query():
         except Exception as e:
             st.error(f"Error: {e}")
 
-st.text_area("Enter your prompt:", key="user_input", on_change=process_query)
+user_input = st.text_area("Enter your prompt:", key="user_input", on_change=process_query)
 
 if st.button("Submit Query"):
     process_query()
