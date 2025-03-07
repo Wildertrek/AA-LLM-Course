@@ -45,12 +45,12 @@ def query_grok(prompt: str):
     except Exception as e:
         return f"Error querying Grok: {e}"
 
-def query_tavily(search_query: str):
+def query_tavily(search_query: str, num_references: int):
     """Perform a web search using Tavily API."""
     try:
         url = "https://api.tavily.com/search"
         headers = {"Authorization": f"Bearer {tavily_api_key}", "Content-Type": "application/json"}
-        payload = {"query": search_query}
+        payload = {"query": search_query, "num_results": num_references}
         response = requests.post(url, json=payload, headers=headers)
         data = response.json()
         return data.get("results", [])
@@ -80,67 +80,28 @@ temperature_setting = st.sidebar.radio("Conversation Type (Temperature)", ["Crea
 num_references = st.sidebar.slider("Number of Referenced Responses", 1, 10, 5)
 follow_up_enabled = st.sidebar.checkbox("Enable Follow-up Queries")
 
-# Initialize session state variables
-if "process_query" not in st.session_state:
-    st.session_state.process_query = False
-if "web_search" not in st.session_state:
-    st.session_state.web_search = False
-if "user_input" not in st.session_state:
-    st.session_state.user_input = ""
-if "search_results" not in st.session_state:
-    st.session_state.search_results = []
-
 # Query Interface at the Top
-#st.subheader("Enter Your Query")
+st.subheader("Enter Your Query")
 
-with st.form(key="query_form"):
-    st.text_area("Enter your prompt:", key="user_input")
+with st.form(key="query_form", clear_on_submit=True):
+    user_input = st.text_area("Enter your prompt:")
     col1, col2 = st.columns([0.5, 0.5])
     with col1:
         submit_button = st.form_submit_button("Submit Query")
     with col2:
         web_search_button = st.form_submit_button("Web Search with Tavily")
 
-if submit_button:
-    if not st.session_state.user_input:
-        st.warning("Please enter a prompt before submitting.")
-    else:
-        try:
-            temperature_values = {"Creative": 0.8, "Balanced": 0.5, "Precise": 0.2}
-            temperature = temperature_values[temperature_setting]
-            
-            if llm_provider == "GPT-4o":
-                response = gpt4o_chat.invoke([HumanMessage(content=st.session_state.user_input)], temperature=temperature).content
-            elif llm_provider == "GPT-4o-mini":
-                response = gpt4o_mini_chat.invoke([HumanMessage(content=st.session_state.user_input)], temperature=temperature).content
-            elif llm_provider == "Claude-3.5-Sonnet":
-                response = claude_chat.invoke(st.session_state.user_input).content
-            elif llm_provider == "Gemini-2.0-Flash":
-                response = gemini_model.generate_content(st.session_state.user_input).text
-            elif llm_provider == "Grok-2-Latest":
-                response = query_grok(st.session_state.user_input)
-            else:
-                response = "Invalid model selection."
-            
-            st.subheader("Response")
-            st.success(f"{system_persona}: {response}")
-            
-            if follow_up_enabled:
-                st.subheader("Follow-up Questions")
-                follow_up_questions = generate_follow_up_queries(st.session_state.user_input, response)
-                for question in follow_up_questions:
-                    st.write(f"- {question}")
-        except Exception as e:
-            st.error(f"Error: {e}")
+if submit_button and user_input:
+    st.session_state.user_input = user_input
 
 if web_search_button:
-    if not st.session_state.user_input:
+    if not st.session_state.get("user_input"):
         st.warning("Please enter a search query before submitting.")
     else:
-        search_results = query_tavily(st.session_state.user_input)
+        search_results = query_tavily(st.session_state.user_input, num_references)
         st.subheader("Tavily Search Results:")
         if search_results:
-            for idx, result in enumerate(search_results[:5]):
+            for idx, result in enumerate(search_results[:num_references]):
                 st.markdown(f"**{idx+1}. [{result['title']}]({result['url']})**")
                 st.write(f"{result['content']}")
         else:
