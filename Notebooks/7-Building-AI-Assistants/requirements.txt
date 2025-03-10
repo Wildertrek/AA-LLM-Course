@@ -1,0 +1,10 @@
+streamlit
+requests
+python-dotenv
+google-generativeai
+openai
+anthropic
+langchain-openai
+langchain-anthropic
+langchain-core
+langchain-community
