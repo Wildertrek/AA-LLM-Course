@@ -1,0 +1,383 @@
+{
+    "openai": [
+        {
+            "model_id": "gpt-4o-mini-transcribe",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-audio-preview-2024-12-17",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-audio-preview-2024-10-01",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-realtime-preview-2024-10-01",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-audio-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-2024-05-13",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-realtime-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-audio-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-3.5-turbo-instruct-0914",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-search-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-3.5-turbo-1106",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-search-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4-turbo",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-realtime-preview-2024-12-17",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-3.5-turbo-instruct",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-3.5-turbo",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4-turbo-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-search-preview-2025-03-11",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-realtime-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-3.5-turbo-0125",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-2024-08-06",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4-turbo-2024-04-09",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-3.5-turbo-16k",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-realtime-preview-2024-12-17",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4-1106-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4-0613",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4.5-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4.5-preview-2025-02-27",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-search-preview-2025-03-11",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-2024-11-20",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-tts",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4-0125-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-2024-07-18",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-transcribe",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini",
+            "metadata": {}
+        },
+        {
+            "model_id": "gpt-4o-mini-audio-preview-2024-12-17",
+            "metadata": {}
+        }
+    ],
+    "anthropic": [
+        {
+            "model_id": "claude-3-7-sonnet-20250219",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-3-5-sonnet-20241022",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-3-5-haiku-20241022",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-3-5-sonnet-20240620",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-3-haiku-20240307",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-3-opus-20240229",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-3-sonnet-20240229",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-2.1",
+            "metadata": {}
+        },
+        {
+            "model_id": "claude-2.0",
+            "metadata": {}
+        }
+    ],
+    "google": [
+        {
+            "model_id": "models/chat-bison-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/text-bison-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/embedding-gecko-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.0-pro-vision-latest",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-pro-vision",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-pro-latest",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-pro-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-pro-002",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-pro",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-latest",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-001-tuning",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-002",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-8b",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-8b-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-8b-latest",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-8b-exp-0827",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-1.5-flash-8b-exp-0924",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-exp",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-exp-image-generation",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-lite-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-lite",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-lite-preview-02-05",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-lite-preview",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-pro-exp",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-pro-exp-02-05",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-exp-1206",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-thinking-exp-01-21",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-thinking-exp",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-2.0-flash-thinking-exp-1219",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/learnlm-1.5-pro-experimental",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemma-3-27b-it",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/embedding-001",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/text-embedding-004",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-embedding-exp-03-07",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/gemini-embedding-exp",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/aqa",
+            "metadata": {}
+        },
+        {
+            "model_id": "models/imagen-3.0-generate-002",
+            "metadata": {}
+        }
+    ],
+    "grok": [
+        {
+            "model_id": "grok-2-1212",
+            "metadata": {}
+        },
+        {
+            "model_id": "grok-2-vision-1212",
+            "metadata": {}
+        },
+        {
+            "model_id": "grok-beta",
+            "metadata": {}
+        },
+        {
+            "model_id": "grok-vision-beta",
+            "metadata": {}
+        },
+        {
+            "model_id": "grok-2-image-1212",
+            "metadata": {}
+        }
+    ],
+    "total_models": 93
+}
