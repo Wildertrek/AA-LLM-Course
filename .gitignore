@@ -17,3 +17,4 @@ Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/0_simple-graph-checkp
 Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/4_agent-memory-checkpoint.ipynb
 *.ipynb_checkpoints
 .DS_Store
+/Notebooks/7-Building-AI-Assistants/AI-Assistant
