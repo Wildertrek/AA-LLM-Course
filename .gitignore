@@ -18,3 +18,6 @@ Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/4_agent-memory-checkp
 *.ipynb_checkpoints
 .DS_Store
 /Notebooks/7-Building-AI-Assistants/AI-Assistant
+# pycache
+__pycache__/
+*.py[cod]
