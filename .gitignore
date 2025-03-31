@@ -21,3 +21,4 @@ Notebooks/1-Setup-Foundations/LangChain/.ipynb_checkpoints/4_agent-memory-checkp
 # pycache
 __pycache__/
 *.py[cod]
+Notebooks/7-Building-AI-Assistants/__pycache__/openai_model_selector.cpython-313.pyc
