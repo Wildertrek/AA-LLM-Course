@@ -1,10 +1,11 @@
----
+# **Course Title:** 
 
-**Course Title:** Advanced Applications of Large Language Models: Assistants, Agents & RAG
-**Course Number:** COSC 650
-**Semester:** Fall 2025
-**Credit Hours:** 3
-**Instructors:** *Jens Gregor / Joseph Raetano
+## Advanced Applications of Large Language Models: Assistants, Agents & RAG
+
+- **Course Number:** COSC 650
+- **Semester:** Fall 2025
+- **Credit Hours:** 3
+- **Instructors:** *Jens Gregor / Joseph Raetano
 
 ### **Course Description:**
 This course provides an intensive, hands-on immersion into the practical applications of Generative AI and Large Language Models (LLMs), with a primary focus on Retrieval-Augmented Generation (RAG) and building LLM-powered Agents/Assistants. Students will gain deep practical experience through individual projects focused on prompt engineering, RAG pipeline construction and evaluation, and creating autonomous AI assistants capable of executing tasks. The curriculum emphasizes hands-on interaction with LLM APIs, integration into basic applications using Streamlit, leveraging the LangChain framework, and foundational ethical AI practices.
