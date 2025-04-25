@@ -1,116 +1,109 @@
-**Course Title:** Advanced Applications of Large Language Models (LLMs)  
-**Course Number:** COSC 650  
-**Semester:** Fall 2024  
-**Credit Hours:** 3  
-**Instructors:**
+---
 
-### **Course Description:**  
-This course immerses students in the practical and theoretical aspects of Generative AI and Large Language Models (LLMs). Individual projects will focus on prompt engineering, retrieval-augmented generation (RAG), function calling, fine-tuning techniques, use of multi-modal inputs, and creating AI assistants. The curriculum includes hands-on interaction with LLM APIs, integration into applications using Streamlit, JavaScript/Node.js, LangChain, LangGraph, and ethical AI practices.
+**Course Title:** Advanced Applications of Large Language Models: Assistants, Agents & RAG
+**Course Number:** COSC 650
+**Semester:** Fall 2025
+**Credit Hours:** 3
+**Instructors:** *Jens Gregor / Joseph Raetano
 
-### **Course Objectives:**  
-1. Develop a deep understanding of LLMs and their applications.
-2. Learn and apply techniques such as prompt engineering, retrieval-augmented generation, function calling, and fine-tuning.
-3. Design and implement LLM-based solutions for real-world tasks, including integrating AI assistants into interactive applications using frameworks like Streamlit or JavaScript and Node.js.
-4. Build autonomous LLM-powered AI assistants capable of executing multi-step workflows and integrating them with user interfaces for enhanced interactivity.
-5. Apply ethical considerations and responsible AI practices in LLM deployment.
+### **Course Description:**
+This course provides an intensive, hands-on immersion into the practical applications of Generative AI and Large Language Models (LLMs), with a primary focus on Retrieval-Augmented Generation (RAG) and building LLM-powered Agents/Assistants. Students will gain deep practical experience through individual projects focused on prompt engineering, RAG pipeline construction and evaluation, and creating autonomous AI assistants capable of executing tasks. The curriculum emphasizes hands-on interaction with LLM APIs, integration into basic applications using Streamlit, leveraging the LangChain framework, and foundational ethical AI practices.
 
-### **Weekly Breakdown and Project Integration:**
+### **Course Objectives:**
+1.  Develop a deep, practical understanding of LLMs and their core application patterns in RAG and Agents.
+2.  Master and apply techniques such as advanced prompt engineering, retrieval-augmented generation pipeline design, and agent construction using frameworks like LangChain.
+3.  Design and implement LLM-based RAG systems and AI assistants for real-world tasks.
+4.  Build autonomous LLM-powered AI assistants capable of executing multi-step workflows and integrate them with basic user interfaces (Streamlit).
+5.  Apply fundamental ethical considerations and responsible AI practices in LLM application development.
 
-#### **Week 1: Introduction to Generative AI, LLMs & Key Terminology**
-- **Topics:** History of Language Models.
-  - Taking someone from no LM understanding up to today's state of the art. How did we get here?
-  - Introduction to Generative AI, Large Language Models (LLMs), key terminology (tokens, embeddings, prompts), real-world applications through a survey of LLMs.
-  - Discuss the families of LLMs and how each evolved
-     - OpenAI GPTs
-     - Meta Llama
-     - Google Palm
-     - Anthropic
-- **Hands-on:** Setup, tokenization and embedding exercises, basic prompt creation using LLM APIs.
-- **Overview:** Introduction to upcoming projects and individual objectives.
+---
 
-#### **Week 2: API Usage, LLM Interaction and Evaluation**
-- **Topics:** APIs for LLM interaction (OpenAI, Azure OpenAI), calling LLM APIs with various parameters, exploring API-driven generation tasks and then evaluating the LLMs performance.
-- **Hands-on:** Calling LLM APIs for text generation and handling API responses.
+### **Weekly Breakdown:**
 
-#### **Week 3: Prompt Engineering Best Practices**
-- **Topics:** Advanced prompt engineering techniques, designing effective prompts, common pitfalls, and improvement strategies.
-- **Hands-on:** Experimenting with prompts to achieve desired responses.
+This schedule expands on the modules with existing materials, dedicating more time to each core concept.
 
-#### **Week 4: Retrieval-Augmented Generation (RAG)**
-- **Topics:** RAG architecture and concepts, vector search concepts, similarity and distance metrics, indexing strategies, using vectors in document retrieval and LLMs.
-- **Hands-on:** Building a basic RAG pipeline with pre-trained models, implementing a vector search mechanism with a document corpus.
+**Module 1: Foundations & LLM Interaction (Weeks 1-3)**
 
-#### **Week 5: Function Calling with LLMs**
-- **Topics:** Understanding function calling in LLMs, when and how to use function calling in LLM-based applications.
-- **Hands-on:** Setting up LLM function calls for external operations.
+* **Week 1: History & Fundamentals of LLMs**
+    * **Topics:** Deep dive into the history of Language Models (BoW, TF-IDF, RNNs, LSTMs, Attention, Transformers); Key terminology (Tokens, Embeddings, Prompts); Survey of major LLM families (GPT, Llama, Claude, Gemini/PaLM) and architectures.
+    * **Hands-on:** Environment setup; Running historical model notebooks; In-depth tokenization exercises; Basic embedding generation and visualization.
+* **Week 2: LLM APIs & Basic Interaction**
+    * **Topics:** Interacting with core LLM APIs (OpenAI, Azure OpenAI, Anthropic if applicable); Understanding key API parameters (temperature, top\_p, max\_tokens, etc.) and their effects; Structured API calls and response handling.
+    * **Hands-on:** Focused labs on calling different LLM APIs for generation tasks; Comparing outputs based on parameter changes; Error handling and best practices for API usage.
+* **Week 3: Evaluating LLM Outputs**
+    * **Topics:** Need for evaluation; Intrinsic vs. Extrinsic evaluation; Common metrics (BLEU, ROUGE, Perplexity limitations); Introduction to model-based evaluation (using LLMs to evaluate LLMs); Designing evaluation test cases.
+    * **Hands-on:** Implementing evaluation scripts; Setting up basic model-based evaluation pipelines; Analyzing evaluation outputs; Discussing limitations of current metrics.
 
-#### **Week 6: Open Source LangChain & LlamaIndex Frameworks**
-- **Topics:** Overview of LangChain and LlamaIndex, building workflows for LLM-driven applications using LangChain, document management with LlamaIndex.
-- **Hands-on:** Set up a LangChain-based project that utilizes LlamaIndex for managing and retrieving documents.
+**Module 2: Advanced Prompt Engineering (Weeks 4-6)**
 
-#### **Week 7: Building AI Assistants with LLMs**
-- **Topics:** Introduction to AI assistants powered by LLMs, use cases for LLMs as AI assistants, building multi-step workflows.
-- **Hands-on:** Implementing a basic LLM-powered AI assistant using LangChain to solve a task autonomously.
+* **Week 4: Core Prompting Techniques**
+    * **Topics:** Zero-shot, Few-shot prompting; Role prompting; Crafting clear instructions and constraints; Using delimiters and structured formats (e.g., Markdown, JSON).
+    * **Hands-on:** Designing and testing prompts for various tasks (summarization, Q&A, classification); Comparing zero-shot vs. few-shot performance.
+* **Week 5: Advanced Prompting Patterns & Iteration**
+    * **Topics:** Chain-of-Thought (CoT), Self-Consistency, Tree-of-Thoughts (conceptual); Step-by-step prompting; Techniques for reducing hallucinations; Iterative prompt refinement process.
+    * **Hands-on:** Implementing CoT prompts; Iteratively refining prompts based on output analysis; Developing rubrics for prompt quality.
+* **Week 6: Prompt Chaining & Structured Outputs**
+    * **Topics:** Breaking down complex tasks into prompt chains; Managing context between prompts; Ensuring consistent structured outputs (JSON, XML); Prompt templating engines (e.g., Jinja, LangChain templates).
+    * **Hands-on:** Building multi-step prompt chains using basic Python or LangChain expression language; Enforcing structured output formats; Using prompt templates for reusability.
 
-#### **Week 8: Integration into Interactive Applications**
-- **Topics:** Integrating LLMs into interactive applications using frameworks like Streamlit and JavaScript/Node.js, creating user interfaces for AI assistants.
-- **Hands-on:** Build a simple interactive application using Streamlit or JavaScript/Node.js that interfaces with an AI assistant to showcase real-time interactions.
+**Module 3: Retrieval-Augmented Generation (RAG) (Weeks 7-9)**
 
-#### **Week 9: Assistant API Integration**
-- **Topics:** Overview of Assistant API, basic use cases and features, integrating it with LLM-driven applications.
-- **Hands-on:** Simple Assistant API integration using OpenAI/Azure OpenAI for generating conversational responses within a web interface.
+* **Week 7: RAG Fundamentals & Vector Embeddings**
+    * **Topics:** Core RAG architecture; Why RAG? (vs. Fine-tuning); Deep dive into vector embeddings - models (Sentence Transformers, OpenAI Ada), properties, use cases; Similarity and distance metrics (Cosine, Euclidean, Dot Product).
+    * **Hands-on:** Generating and comparing embeddings from different models; Calculating vector similarity; Setting up a basic vector store (e.g., FAISS, ChromaDB).
+* **Week 8: Building the RAG Pipeline - Indexing & Retrieval**
+    * **Topics:** Document loading and chunking strategies (fixed size, recursive, semantic); Indexing pipelines; Vector database choices and tradeoffs; Core retrieval algorithms (similarity search).
+    * **Hands-on:** Implementing different chunking methods; Loading and indexing documents into a vector store; Performing vector searches; Evaluating retrieval relevance.
+* **Week 9: Enhancing the RAG Pipeline - Generation & Evaluation**
+    * **Topics:** Combining retrieved context with the original prompt for the LLM; Context stuffing strategies; Evaluating RAG systems (Retrieval metrics: Precision, Recall; Generation metrics: Faithfulness, Relevance); Introduction to RAG frameworks (LangChain RAG chains).
+    * **Hands-on:** Building an end-to-end RAG chain using LangChain; Evaluating the RAG system on a Q&A task; Experimenting with different context combination methods.
 
-#### **Week 10: Chatbot Evaluation**
-- **Topics:** Evaluating chatbot performance, key metrics (accuracy, relevance, user satisfaction), iterating on chatbot design based on feedback and evaluation.
-- **Hands-on:** Evaluate your chatbot using test cases and performance metrics, incorporate improvements based on evaluation results.
+**Module 4: AI Assistants & Agents (Weeks 10-12)**
 
-#### **Week 11: Fine-Tuning LLMs**
-- **Topics:** When and why to fine-tune an LLM, understanding fine-tuning models for specific domains, tools for fine-tuning (Hugging Face, Azure OpenAI).
-- **Hands-on:** Overview and demonstration of fine-tuning on a domain-specific task, integrate the fine-tuned model into an application.
+* **Week 10: Introduction to Agentic AI**
+    * **Topics:** Concept of LLM-powered agents; Core components (LLM Brain, Memory, Tools - conceptual); Agent loops (Observe-Think-Act); Agentic patterns (ReAct, basic Plan-and-Execute).
+    * **Hands-on:** Implementing a very simple ReAct-style agent using LangChain or raw API calls; Designing the thought process for a simple task.
+* **Week 11: Building Task-Specific Agents & Memory**
+    * **Topics:** Designing agents for specific tasks (e.g., information gathering, simple automation); Short-term and long-term memory concepts for agents (conceptual overview); Introduction to agent frameworks (LangChain Agents, brief look at Autogen concepts).
+    * **Hands-on:** Developing specific agents (e.g., Weather Agent, API Spec Agent); Implementing basic conversation buffer memory.
+* **Week 12: AI Assistant Implementation & Basic UI**
+    * **Topics:** Architecting a more cohesive AI Assistant integrating multiple capabilities (e.g., RAG + Agent tools); Handling multi-turn conversations; Basic UI integration strategies using Streamlit.
+    * **Hands-on:** Integrating RAG capabilities into an agent/assistant; Developing a simple Streamlit interface for the assistant; Managing conversation state in the UI.
 
-#### **Week 12: Graph Data Structures and Applications with LangGraph**
-- **Topics:** Introduction to graph databases (e.g., Neo4j), integrating graph databases to enhance retrieval, graph embeddings, chunking documents, leveraging graph data for enhanced decision-making in LLMs, and using **LangGraph** for integrating graph structures with language models.
-- **Hands-on:** Creating and querying a simple graph database to augment LLM responses, integrating graph data into your AI assistant using **LangGraph**, building applications that combine LangChain and LangGraph.
+**Module 5: Project Integration & Wrap-up (Weeks 13-15)**
 
-#### **Week 13: Project Preparation and Integration**
-- **Topics:** Refining and integrating project components into a cohesive application.
-- **Hands-on:** Complete all projects, focusing on integrating LLM functionalities into the interactive application, including graph integration, preparing for final presentations.
+* **Week 13: Project Work Session & Integration**
+    * **Topics:** Dedicated time for students to integrate RAG and Agent components into their final projects. Troubleshooting and refinement.
+    * **Hands-on:** Intensive project development; Instructor and peer support.
+* **Week 14: Responsible AI & Final Presentations I**
+    * **Topics:** Review of ethical considerations (bias, fairness, transparency) specifically in the context of RAG and Agents; Strategies for mitigating risks; Responsible deployment considerations.
+    * **Hands-on:** Analyzing course projects for potential ethical issues; Preparing final presentations.
+    * **Project Presentations:** Begin final project demonstrations.
+* **Week 15: Final Presentations II & Course Conclusion**
+    * **Topics:** Continuation and conclusion of final project presentations; Peer review and feedback.
+    * **Project Presentations:** Final Q&A and evaluation.
+    * **Course Review:** Summary of key takeaways; Discussion of limitations and future directions within RAG and Agents.
 
-#### **Week 14: Responsible AI Practices and Project Presentations**
-- **Topics:** Ethical considerations in AI development, Microsoft’s Responsible AI principles, implementing fairness, transparency, and accountability in AI systems.
-- **Hands-on:** Analyzing your AI assistant or LLM-based project through the lens of Responsible AI, ensuring ethical AI deployment.
-- **Project Presentations:** Begin final project presentations, incorporating discussions on how Responsible AI practices were implemented.
+---
 
-#### **Week 15: Final Project Presentations and Course Review**
-- **Topics:** Continuation of final project presentations, peer review, and feedback.
-- **Hands-on:** Final project presentations and Q&A, evaluation based on technical merit, innovation, application of learned material, and integration of Responsible AI practices.
-- **Course Review:** Reflective discussions on key concepts learned, exploration of emerging trends and future directions in LLMs and AI assistants.
+### **Assessment Methods:**
+* Module Projects (Prompting, RAG, AI Assistants & Agents): 60%
+* Participation and Weekly Assignments: 10%
+* Peer Reviews and Interaction: 10%
+* Final Integrated Project Presentation: 20%
 
-### **Assessment Methods:**  
-- Projects 1-4: Each project 15% (Total 60%)  
-- Participation and Weekly Assignments: 10%  
-- Peer Reviews and Interaction: 10%  
-- Final Presentations: 20%  
+### **Textbooks and Resources:**
+* Primary Textbook: *Building LLMs for Production, Enhancing LLM Abilities and Reliability with Prompting, Fine-Tuning, and RAG* by Louis-François Bouchard.
+* Possible other Textbook: *Large Language Models: A Deep Dive: Bridging Theory and Practice*
+* Supplementary book materials: [https://towardsai.net/book](https://towardsai.net/book)
+* Supplementary materials including research articles, online courses, and tutorials.
 
-### **Textbooks and Resources:**  
-- Primary Textbook: *[Building LLMs for Production, Enhancing LLM Abilities and Reliability with Prompting, Fine-Tuning, and RAG](https://learning.oreilly.com/library/view/building-llms-for/9798324731472/titlepage.xhtml)* by Louis-François Bouchard.
-- Possible other Textbook: [Large Language Models: A Deep Dive: Bridging Theory and Practice](https://www.amazon.com/Large-Language-Models-Bridging-Practice/dp/3031656466)
-- Supplementary book materials: [https://towardsai.net/book](https://towardsai.net/book)
-- Supplementary materials including research articles, online courses, and tutorials.  
+### **Software and Tools:**
+* Programming languages: Python
+* AI frameworks/APIs: OpenAI, Azure OpenAI, Anthropic (Optional)
+* LLM frameworks: LangChain, LlamaIndex
+* Application frameworks: Streamlit
+* Vector Stores: FAISS, ChromaDB (Examples)
+* Cloud services and AI platforms: Azure (Optional)
 
-### **Software and Tools:**  
-- Programming languages: Python  
-- AI frameworks: TensorFlow, PyTorch, OpenAI  
-- Application frameworks: Streamlit, JavaScript/Node.js  
-- **LLM frameworks:** LangChain, LlamaIndex, **LangGraph**  
-- Graph databases: Neo4j  
-- Cloud services and AI platforms: Azure, Open Source  
-
-
-**Notes on Changes:**
-
-- **Added LangGraph to Week 12:** Incorporated **LangGraph** into **Week 12: Graph Data Structures and Applications with LangGraph** to enhance the focus on integrating graph structures with language models.
-- **Updated Week 12 Topics and Hands-on Activities:** Included topics on using LangGraph for integrating graph data with LLMs and updated hands-on activities to reflect the use of LangGraph.
-- **Added LangGraph to Software and Tools:** Listed **LangGraph** under LLM frameworks in the Software and Tools section to highlight its importance in the course.
-  
-This updated syllabus now includes LangGraph in the graph session, providing students with the opportunity to learn and apply this tool in their projects.
+---

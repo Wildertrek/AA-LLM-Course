@@ -1,0 +1,1544 @@
+.
+├── Data
+│   └── pg2600.txt
+├── env-example.txt
+├── LLM-Images
+│   ├── 17-Golden-Rules-Prompts.jpeg
+│   ├── 1733973153965.gif
+│   ├── Agent-Infrastructure.jpeg
+│   ├── AI-Agent-Stacks.png
+│   ├── AI-Agents-Stack.jpeg
+│   ├── AI-Catalog-Graph.png
+│   ├── AI-Catalog-Graph.png:Zone.Identifier
+│   ├── AI-Developer.jpeg
+│   ├── DataFormulator-2-Iteratively-Creating-Rich-Visualizations-with-AI.pdf
+│   ├── eq1.png
+│   ├── Eq2.png
+│   ├── Fig1-LLM-Capabilities.png
+│   ├── Fig10-Augmented-LSTM-Network-Cell-System-Schematics.png
+│   ├── Fig10-RLHF.png
+│   ├── Fig11-GPT3-4-Exam-results.png
+│   ├── Fig12-Training-of-LLaMA-2-Chat.png
+│   ├── Fig13-Relative-Response-Quality-of-Vicuna.png
+│   ├── Fig14-Flan-PaLM- finetuning.png
+│   ├── Fig16-Model-architecture-details-of-Gopher.png
+│   ├── Fig17-High-level-model-architecture-of-ERNIE.png
+│   ├── Fig18-Retro-architecture.png
+│   ├── Fig19-GLaM-model-architecture.png
+│   ├── Fig2-The-Paper-Structure.png
+│   ├── Fig20-Different-OPT-Models-architecture.png
+│   ├── Fig21-Sparrow-pipeline.png
+│   ├── Fig22-An-overview-of-UL2-pretraining-paradigm.png
+│   ├── Fig23-An-overview-of-BLOOM-architecture.png
+│   ├── Fig24-Timeline-of-some-of-the-most-representative-LLM-frameworks.png
+│   ├── Fig25-This-figure-shows-different-components-of-LLMs.png
+│   ├── Fig26-High-level-overview-of-transformer-work.png
+│   ├── Fig27-Subsequent-stages.png
+│   ├── Fig28-Various-positional-encodings-are-employed-in-LLMs.png
+│   ├── Fig3-BERT-PreTraining-Fine-Tuning.png
+│   ├── Fig4-BERT-Comparison.png
+│   ├── Fig5-Corss-Lingual-lang-model-pretraining.png
+│   ├── Fig6-LM-Pretraining-Overview.png
+│   ├── Fig7-High-level-overview-GPT.png
+│   ├── Fig8-Popular-LLM-Families.png
+│   ├── Fig9-GPT3.png
+│   ├── Figure-1-The-Transformer-model-architecture.png
+│   ├── Figure-2-SDPA-MHA.png
+│   ├── Google-AI.png
+│   ├── openai-lockup.png
+│   ├── openai-white-lockup.png
+│   ├── OWASP-2025-Q1.jpeg
+│   ├── pipelines.gif
+│   └── Transformer.jpeg
+├── Markdown
+│   ├── Cards
+│   │   ├── Agent-Card.md
+│   │   ├── AI-Catalog.md
+│   │   ├── AI-Use-Case-Card.md
+│   │   ├── Dataset-Card.md
+│   │   ├── Model-Card.md
+│   │   └── MongoDB-AI-Catalog-Design.md
+│   ├── LLM-categories.md
+│   ├── LLM-Production.md
+│   ├── Models.md
+│   ├── notes.md
+│   ├── Prompt-Engineering-Adjustments-Table.md
+│   ├── Shot-Learners.md
+│   ├── W3-inital-prompt.md
+│   └── W3-Step-1.md
+├── Notebooks
+│   ├── 1-Setup-Foundations
+│   │   ├── 0-Setup-Environment-Update.ipynb
+│   │   ├── 0-Setup-Environment.ipynb
+│   │   ├── 1-History-of-Language-Models.ipynb
+│   │   ├── 2-Large-Language-Models-A-Survey.ipynb
+│   │   ├── LangChain
+│   │   │   ├── 0_simple-graph.ipynb
+│   │   │   ├── 1_chain.ipynb
+│   │   │   ├── 2_router.ipynb
+│   │   │   ├── 3_agent.ipynb
+│   │   │   ├── 4_agent-memory.ipynb
+│   │   │   └── 5_deployment.ipynb
+│   │   ├── LM-Notebooks
+│   │   │   ├── 1954-BoW.ipynb
+│   │   │   ├── 1972-TF-IDF.ipynb
+│   │   │   ├── 1997-Bidirectional-RNN .ipynb
+│   │   │   ├── 1997-LSTM.ipynb
+│   │   │   ├── 1997-Vanishing-Gradient-Problem.ipynb
+│   │   │   ├── 2013-CBOW.ipynb
+│   │   │   ├── 2013-Word2Vec.ipynb
+│   │   │   ├── 2014-RNNs-Encoder-Decoder.ipynb
+│   │   │   ├── 2017-Transformer-Attention-is-All-You-Need.ipynb
+│   │   │   ├── 2017-Transformers.ipynb
+│   │   │   ├── 2018-2024-GPT.ipynb
+│   │   │   ├── 2018-BERT.ipynb
+│   │   │   ├── 2023-Meta-Llama.ipynb
+│   │   │   ├── Evolution-of-LLMs.ipynb
+│   │   │   ├── Google-LLMs.ipynb
+│   │   │   ├── gpt_progression
+│   │   │   ├── gpt_progression.png
+│   │   │   └── History-of-Neural-Networks.ipynb
+│   │   └── outputs
+│   │       └── Explain_how_AI_works.md
+│   ├── 2-API-Usage-LLM-Interaction-and-Evaluation
+│   │   ├── API-Usage-LLM-Interaction.ipynb
+│   │   ├── Evaluating-LLMs.ipynb
+│   │   ├── evaluation_summary_comparison.json
+│   │   └── evaluation_summary.json
+│   ├── 3-Prompt-Engineering-Best-Practices
+│   │   ├── outputs
+│   │   │   ├── final_comparison_responses.md
+│   │   │   ├── initial_comparison_responses.md
+│   │   │   ├── step1_comparison_responses.md
+│   │   │   ├── step2_comparison_responses.md
+│   │   │   ├── step3_comparison_responses.md
+│   │   │   ├── step4_comparison_responses.md
+│   │   │   └── step5_comparison_responses.md
+│   │   └── Week-3-Prompt Engineering.ipynb
+│   ├── 4-Retrieval-Augmented Generation
+│   │   ├── Designing-Building-RAG-Ecosystems.ipynb
+│   │   ├── Embeddings.ipynb
+│   │   ├── RAG-Understanding.ipynb
+│   │   └── Week 4 - Retrieval-Augmented Generation.ipynb
+│   ├── 5-Function-Calling-with-LLMs
+│   ├── 6-Open-Source-LangChain-LlamaIndex Frameworks
+│   ├── 7-Building-AI-Assistants
+│   │   ├── __pycache__
+│   │   │   ├── openai_model_selector.cpython-311.pyc
+│   │   │   └── openai_model_selector.cpython-313.pyc
+│   │   ├── AA-37.py
+│   │   ├── AA-38.py
+│   │   ├── AA-39.py
+│   │   ├── AA-40.py
+│   │   ├── Agentic-Patterns.ipynb
+│   │   ├── Agentic.ipynb
+│   │   ├── AI-Assistant
+│   │   │   ├── AA-15.py
+│   │   │   ├── AA-16.py
+│   │   │   ├── AA-17.py
+│   │   │   ├── AA-18.py
+│   │   │   ├── AA-19.py
+│   │   │   ├── AA-20.py
+│   │   │   ├── AA-21.py
+│   │   │   ├── AA-22.py
+│   │   │   ├── AA-23.py
+│   │   │   ├── bin
+│   │   │   │   ├── activate
+│   │   │   │   ├── activate.csh
+│   │   │   │   ├── activate.fish
+│   │   │   │   ├── Activate.ps1
+│   │   │   │   ├── pip
+│   │   │   │   ├── pip3
+│   │   │   │   ├── pip3.13
+│   │   │   │   ├── python -> python3.13
+│   │   │   │   ├── python3 -> python3.13
+│   │   │   │   └── python3.13 -> /usr/local/opt/python@3.13/bin/python3.13
+│   │   │   ├── include
+│   │   │   │   └── python3.13
+│   │   │   ├── lib
+│   │   │   │   └── python3.13
+│   │   │   │       └── site-packages
+│   │   │   │           ├── pip
+│   │   │   │           │   ├── __init__.py
+│   │   │   │           │   ├── __main__.py
+│   │   │   │           │   ├── __pip-runner__.py
+│   │   │   │           │   ├── __pycache__
+│   │   │   │           │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   ├── __main__.cpython-313.pyc
+│   │   │   │           │   │   └── __pip-runner__.cpython-313.pyc
+│   │   │   │           │   ├── _internal
+│   │   │   │           │   │   ├── __init__.py
+│   │   │   │           │   │   ├── __pycache__
+│   │   │   │           │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   ├── build_env.cpython-313.pyc
+│   │   │   │           │   │   │   ├── cache.cpython-313.pyc
+│   │   │   │           │   │   │   ├── configuration.cpython-313.pyc
+│   │   │   │           │   │   │   ├── exceptions.cpython-313.pyc
+│   │   │   │           │   │   │   ├── main.cpython-313.pyc
+│   │   │   │           │   │   │   ├── pyproject.cpython-313.pyc
+│   │   │   │           │   │   │   ├── self_outdated_check.cpython-313.pyc
+│   │   │   │           │   │   │   └── wheel_builder.cpython-313.pyc
+│   │   │   │           │   │   ├── build_env.py
+│   │   │   │           │   │   ├── cache.py
+│   │   │   │           │   │   ├── cli
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── autocompletion.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── base_command.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── cmdoptions.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── command_context.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── index_command.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── main_parser.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── main.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── parser.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── progress_bars.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── req_command.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── spinners.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── status_codes.cpython-313.pyc
+│   │   │   │           │   │   │   ├── autocompletion.py
+│   │   │   │           │   │   │   ├── base_command.py
+│   │   │   │           │   │   │   ├── cmdoptions.py
+│   │   │   │           │   │   │   ├── command_context.py
+│   │   │   │           │   │   │   ├── index_command.py
+│   │   │   │           │   │   │   ├── main_parser.py
+│   │   │   │           │   │   │   ├── main.py
+│   │   │   │           │   │   │   ├── parser.py
+│   │   │   │           │   │   │   ├── progress_bars.py
+│   │   │   │           │   │   │   ├── req_command.py
+│   │   │   │           │   │   │   ├── spinners.py
+│   │   │   │           │   │   │   └── status_codes.py
+│   │   │   │           │   │   ├── commands
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── cache.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── check.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── completion.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── configuration.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── debug.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── download.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── freeze.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── hash.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── help.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── index.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── inspect.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── install.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── list.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── search.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── show.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── uninstall.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── wheel.cpython-313.pyc
+│   │   │   │           │   │   │   ├── cache.py
+│   │   │   │           │   │   │   ├── check.py
+│   │   │   │           │   │   │   ├── completion.py
+│   │   │   │           │   │   │   ├── configuration.py
+│   │   │   │           │   │   │   ├── debug.py
+│   │   │   │           │   │   │   ├── download.py
+│   │   │   │           │   │   │   ├── freeze.py
+│   │   │   │           │   │   │   ├── hash.py
+│   │   │   │           │   │   │   ├── help.py
+│   │   │   │           │   │   │   ├── index.py
+│   │   │   │           │   │   │   ├── inspect.py
+│   │   │   │           │   │   │   ├── install.py
+│   │   │   │           │   │   │   ├── list.py
+│   │   │   │           │   │   │   ├── search.py
+│   │   │   │           │   │   │   ├── show.py
+│   │   │   │           │   │   │   ├── uninstall.py
+│   │   │   │           │   │   │   └── wheel.py
+│   │   │   │           │   │   ├── configuration.py
+│   │   │   │           │   │   ├── distributions
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── base.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── installed.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── sdist.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── wheel.cpython-313.pyc
+│   │   │   │           │   │   │   ├── base.py
+│   │   │   │           │   │   │   ├── installed.py
+│   │   │   │           │   │   │   ├── sdist.py
+│   │   │   │           │   │   │   └── wheel.py
+│   │   │   │           │   │   ├── exceptions.py
+│   │   │   │           │   │   ├── index
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── collector.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── package_finder.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── sources.cpython-313.pyc
+│   │   │   │           │   │   │   ├── collector.py
+│   │   │   │           │   │   │   ├── package_finder.py
+│   │   │   │           │   │   │   └── sources.py
+│   │   │   │           │   │   ├── locations
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _distutils.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _sysconfig.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── base.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _distutils.py
+│   │   │   │           │   │   │   ├── _sysconfig.py
+│   │   │   │           │   │   │   └── base.py
+│   │   │   │           │   │   ├── main.py
+│   │   │   │           │   │   ├── metadata
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _json.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── base.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── pkg_resources.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _json.py
+│   │   │   │           │   │   │   ├── base.py
+│   │   │   │           │   │   │   ├── importlib
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── _compat.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── _dists.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── _envs.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _compat.py
+│   │   │   │           │   │   │   │   ├── _dists.py
+│   │   │   │           │   │   │   │   └── _envs.py
+│   │   │   │           │   │   │   └── pkg_resources.py
+│   │   │   │           │   │   ├── models
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── candidate.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── direct_url.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── format_control.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── index.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── installation_report.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── link.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── scheme.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── search_scope.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── selection_prefs.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── target_python.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── wheel.cpython-313.pyc
+│   │   │   │           │   │   │   ├── candidate.py
+│   │   │   │           │   │   │   ├── direct_url.py
+│   │   │   │           │   │   │   ├── format_control.py
+│   │   │   │           │   │   │   ├── index.py
+│   │   │   │           │   │   │   ├── installation_report.py
+│   │   │   │           │   │   │   ├── link.py
+│   │   │   │           │   │   │   ├── scheme.py
+│   │   │   │           │   │   │   ├── search_scope.py
+│   │   │   │           │   │   │   ├── selection_prefs.py
+│   │   │   │           │   │   │   ├── target_python.py
+│   │   │   │           │   │   │   └── wheel.py
+│   │   │   │           │   │   ├── network
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── auth.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── cache.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── download.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── lazy_wheel.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── session.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── utils.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── xmlrpc.cpython-313.pyc
+│   │   │   │           │   │   │   ├── auth.py
+│   │   │   │           │   │   │   ├── cache.py
+│   │   │   │           │   │   │   ├── download.py
+│   │   │   │           │   │   │   ├── lazy_wheel.py
+│   │   │   │           │   │   │   ├── session.py
+│   │   │   │           │   │   │   ├── utils.py
+│   │   │   │           │   │   │   └── xmlrpc.py
+│   │   │   │           │   │   ├── operations
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── check.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── freeze.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── prepare.cpython-313.pyc
+│   │   │   │           │   │   │   ├── build
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── build_tracker.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── metadata_editable.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── metadata_legacy.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── metadata.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── wheel_editable.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── wheel_legacy.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── wheel.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── build_tracker.py
+│   │   │   │           │   │   │   │   ├── metadata_editable.py
+│   │   │   │           │   │   │   │   ├── metadata_legacy.py
+│   │   │   │           │   │   │   │   ├── metadata.py
+│   │   │   │           │   │   │   │   ├── wheel_editable.py
+│   │   │   │           │   │   │   │   ├── wheel_legacy.py
+│   │   │   │           │   │   │   │   └── wheel.py
+│   │   │   │           │   │   │   ├── check.py
+│   │   │   │           │   │   │   ├── freeze.py
+│   │   │   │           │   │   │   ├── install
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── editable_legacy.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── wheel.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── editable_legacy.py
+│   │   │   │           │   │   │   │   └── wheel.py
+│   │   │   │           │   │   │   └── prepare.py
+│   │   │   │           │   │   ├── pyproject.py
+│   │   │   │           │   │   ├── req
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── constructors.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── req_file.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── req_install.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── req_set.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── req_uninstall.cpython-313.pyc
+│   │   │   │           │   │   │   ├── constructors.py
+│   │   │   │           │   │   │   ├── req_file.py
+│   │   │   │           │   │   │   ├── req_install.py
+│   │   │   │           │   │   │   ├── req_set.py
+│   │   │   │           │   │   │   └── req_uninstall.py
+│   │   │   │           │   │   ├── resolution
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── base.cpython-313.pyc
+│   │   │   │           │   │   │   ├── base.py
+│   │   │   │           │   │   │   ├── legacy
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── resolver.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── resolver.py
+│   │   │   │           │   │   │   └── resolvelib
+│   │   │   │           │   │   │       ├── __init__.py
+│   │   │   │           │   │   │       ├── __pycache__
+│   │   │   │           │   │   │       │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── base.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── candidates.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── factory.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── found_candidates.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── provider.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── reporter.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── requirements.cpython-313.pyc
+│   │   │   │           │   │   │       │   └── resolver.cpython-313.pyc
+│   │   │   │           │   │   │       ├── base.py
+│   │   │   │           │   │   │       ├── candidates.py
+│   │   │   │           │   │   │       ├── factory.py
+│   │   │   │           │   │   │       ├── found_candidates.py
+│   │   │   │           │   │   │       ├── provider.py
+│   │   │   │           │   │   │       ├── reporter.py
+│   │   │   │           │   │   │       ├── requirements.py
+│   │   │   │           │   │   │       └── resolver.py
+│   │   │   │           │   │   ├── self_outdated_check.py
+│   │   │   │           │   │   ├── utils
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _jaraco_text.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _log.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── appdirs.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── compat.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── compatibility_tags.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── datetime.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── deprecation.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── direct_url_helpers.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── egg_link.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── entrypoints.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── filesystem.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── filetypes.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── glibc.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── hashes.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── logging.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── misc.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── packaging.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── retry.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── setuptools_build.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── subprocess.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── temp_dir.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── unpacking.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── urls.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── virtualenv.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── wheel.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _jaraco_text.py
+│   │   │   │           │   │   │   ├── _log.py
+│   │   │   │           │   │   │   ├── appdirs.py
+│   │   │   │           │   │   │   ├── compat.py
+│   │   │   │           │   │   │   ├── compatibility_tags.py
+│   │   │   │           │   │   │   ├── datetime.py
+│   │   │   │           │   │   │   ├── deprecation.py
+│   │   │   │           │   │   │   ├── direct_url_helpers.py
+│   │   │   │           │   │   │   ├── egg_link.py
+│   │   │   │           │   │   │   ├── entrypoints.py
+│   │   │   │           │   │   │   ├── filesystem.py
+│   │   │   │           │   │   │   ├── filetypes.py
+│   │   │   │           │   │   │   ├── glibc.py
+│   │   │   │           │   │   │   ├── hashes.py
+│   │   │   │           │   │   │   ├── logging.py
+│   │   │   │           │   │   │   ├── misc.py
+│   │   │   │           │   │   │   ├── packaging.py
+│   │   │   │           │   │   │   ├── retry.py
+│   │   │   │           │   │   │   ├── setuptools_build.py
+│   │   │   │           │   │   │   ├── subprocess.py
+│   │   │   │           │   │   │   ├── temp_dir.py
+│   │   │   │           │   │   │   ├── unpacking.py
+│   │   │   │           │   │   │   ├── urls.py
+│   │   │   │           │   │   │   ├── virtualenv.py
+│   │   │   │           │   │   │   └── wheel.py
+│   │   │   │           │   │   ├── vcs
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── bazaar.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── git.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── mercurial.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── subversion.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── versioncontrol.cpython-313.pyc
+│   │   │   │           │   │   │   ├── bazaar.py
+│   │   │   │           │   │   │   ├── git.py
+│   │   │   │           │   │   │   ├── mercurial.py
+│   │   │   │           │   │   │   ├── subversion.py
+│   │   │   │           │   │   │   └── versioncontrol.py
+│   │   │   │           │   │   └── wheel_builder.py
+│   │   │   │           │   ├── _vendor
+│   │   │   │           │   │   ├── __init__.py
+│   │   │   │           │   │   ├── __pycache__
+│   │   │   │           │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   └── typing_extensions.cpython-313.pyc
+│   │   │   │           │   │   ├── cachecontrol
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _cmd.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── adapter.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── cache.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── controller.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── filewrapper.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── heuristics.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── serialize.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── wrapper.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _cmd.py
+│   │   │   │           │   │   │   ├── adapter.py
+│   │   │   │           │   │   │   ├── cache.py
+│   │   │   │           │   │   │   ├── caches
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── file_cache.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── redis_cache.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── file_cache.py
+│   │   │   │           │   │   │   │   └── redis_cache.py
+│   │   │   │           │   │   │   ├── controller.py
+│   │   │   │           │   │   │   ├── filewrapper.py
+│   │   │   │           │   │   │   ├── heuristics.py
+│   │   │   │           │   │   │   ├── py.typed
+│   │   │   │           │   │   │   ├── serialize.py
+│   │   │   │           │   │   │   └── wrapper.py
+│   │   │   │           │   │   ├── certifi
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __main__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── __main__.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── core.cpython-313.pyc
+│   │   │   │           │   │   │   ├── cacert.pem
+│   │   │   │           │   │   │   ├── core.py
+│   │   │   │           │   │   │   └── py.typed
+│   │   │   │           │   │   ├── distlib
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── compat.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── database.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── index.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── locators.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── manifest.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── markers.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── metadata.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── resources.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── scripts.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── util.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── version.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── wheel.cpython-313.pyc
+│   │   │   │           │   │   │   ├── compat.py
+│   │   │   │           │   │   │   ├── database.py
+│   │   │   │           │   │   │   ├── index.py
+│   │   │   │           │   │   │   ├── locators.py
+│   │   │   │           │   │   │   ├── manifest.py
+│   │   │   │           │   │   │   ├── markers.py
+│   │   │   │           │   │   │   ├── metadata.py
+│   │   │   │           │   │   │   ├── resources.py
+│   │   │   │           │   │   │   ├── scripts.py
+│   │   │   │           │   │   │   ├── t32.exe
+│   │   │   │           │   │   │   ├── t64-arm.exe
+│   │   │   │           │   │   │   ├── t64.exe
+│   │   │   │           │   │   │   ├── util.py
+│   │   │   │           │   │   │   ├── version.py
+│   │   │   │           │   │   │   ├── w32.exe
+│   │   │   │           │   │   │   ├── w64-arm.exe
+│   │   │   │           │   │   │   ├── w64.exe
+│   │   │   │           │   │   │   └── wheel.py
+│   │   │   │           │   │   ├── distro
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __main__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── __main__.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── distro.cpython-313.pyc
+│   │   │   │           │   │   │   ├── distro.py
+│   │   │   │           │   │   │   └── py.typed
+│   │   │   │           │   │   ├── idna
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── codec.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── compat.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── core.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── idnadata.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── intranges.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── package_data.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── uts46data.cpython-313.pyc
+│   │   │   │           │   │   │   ├── codec.py
+│   │   │   │           │   │   │   ├── compat.py
+│   │   │   │           │   │   │   ├── core.py
+│   │   │   │           │   │   │   ├── idnadata.py
+│   │   │   │           │   │   │   ├── intranges.py
+│   │   │   │           │   │   │   ├── package_data.py
+│   │   │   │           │   │   │   ├── py.typed
+│   │   │   │           │   │   │   └── uts46data.py
+│   │   │   │           │   │   ├── msgpack
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── exceptions.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── ext.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── fallback.cpython-313.pyc
+│   │   │   │           │   │   │   ├── exceptions.py
+│   │   │   │           │   │   │   ├── ext.py
+│   │   │   │           │   │   │   └── fallback.py
+│   │   │   │           │   │   ├── packaging
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _elffile.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _manylinux.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _musllinux.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _parser.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _structures.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _tokenizer.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── markers.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── metadata.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── requirements.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── specifiers.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── tags.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── utils.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── version.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _elffile.py
+│   │   │   │           │   │   │   ├── _manylinux.py
+│   │   │   │           │   │   │   ├── _musllinux.py
+│   │   │   │           │   │   │   ├── _parser.py
+│   │   │   │           │   │   │   ├── _structures.py
+│   │   │   │           │   │   │   ├── _tokenizer.py
+│   │   │   │           │   │   │   ├── licenses
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── _spdx.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── _spdx.py
+│   │   │   │           │   │   │   ├── markers.py
+│   │   │   │           │   │   │   ├── metadata.py
+│   │   │   │           │   │   │   ├── py.typed
+│   │   │   │           │   │   │   ├── requirements.py
+│   │   │   │           │   │   │   ├── specifiers.py
+│   │   │   │           │   │   │   ├── tags.py
+│   │   │   │           │   │   │   ├── utils.py
+│   │   │   │           │   │   │   └── version.py
+│   │   │   │           │   │   ├── pkg_resources
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   │       └── __init__.cpython-313.pyc
+│   │   │   │           │   │   ├── platformdirs
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __main__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── __main__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── android.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── api.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── macos.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── unix.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── version.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── windows.cpython-313.pyc
+│   │   │   │           │   │   │   ├── android.py
+│   │   │   │           │   │   │   ├── api.py
+│   │   │   │           │   │   │   ├── macos.py
+│   │   │   │           │   │   │   ├── py.typed
+│   │   │   │           │   │   │   ├── unix.py
+│   │   │   │           │   │   │   ├── version.py
+│   │   │   │           │   │   │   └── windows.py
+│   │   │   │           │   │   ├── pygments
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __main__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── __main__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── cmdline.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── console.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── filter.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── formatter.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── lexer.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── modeline.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── plugin.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── regexopt.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── scanner.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── sphinxext.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── style.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── token.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── unistring.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── util.cpython-313.pyc
+│   │   │   │           │   │   │   ├── cmdline.py
+│   │   │   │           │   │   │   ├── console.py
+│   │   │   │           │   │   │   ├── filter.py
+│   │   │   │           │   │   │   ├── filters
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   └── __pycache__
+│   │   │   │           │   │   │   │       └── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   ├── formatter.py
+│   │   │   │           │   │   │   ├── formatters
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── _mapping.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── bbcode.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── groff.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── html.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── img.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── irc.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── latex.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── other.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── pangomarkup.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── rtf.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── svg.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── terminal.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── terminal256.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _mapping.py
+│   │   │   │           │   │   │   │   ├── bbcode.py
+│   │   │   │           │   │   │   │   ├── groff.py
+│   │   │   │           │   │   │   │   ├── html.py
+│   │   │   │           │   │   │   │   ├── img.py
+│   │   │   │           │   │   │   │   ├── irc.py
+│   │   │   │           │   │   │   │   ├── latex.py
+│   │   │   │           │   │   │   │   ├── other.py
+│   │   │   │           │   │   │   │   ├── pangomarkup.py
+│   │   │   │           │   │   │   │   ├── rtf.py
+│   │   │   │           │   │   │   │   ├── svg.py
+│   │   │   │           │   │   │   │   ├── terminal.py
+│   │   │   │           │   │   │   │   └── terminal256.py
+│   │   │   │           │   │   │   ├── lexer.py
+│   │   │   │           │   │   │   ├── lexers
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── _mapping.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── python.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _mapping.py
+│   │   │   │           │   │   │   │   └── python.py
+│   │   │   │           │   │   │   ├── modeline.py
+│   │   │   │           │   │   │   ├── plugin.py
+│   │   │   │           │   │   │   ├── regexopt.py
+│   │   │   │           │   │   │   ├── scanner.py
+│   │   │   │           │   │   │   ├── sphinxext.py
+│   │   │   │           │   │   │   ├── style.py
+│   │   │   │           │   │   │   ├── styles
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── _mapping.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── _mapping.py
+│   │   │   │           │   │   │   ├── token.py
+│   │   │   │           │   │   │   ├── unistring.py
+│   │   │   │           │   │   │   └── util.py
+│   │   │   │           │   │   ├── pyproject_hooks
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── _impl.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _impl.py
+│   │   │   │           │   │   │   ├── _in_process
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── _in_process.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── _in_process.py
+│   │   │   │           │   │   │   └── py.typed
+│   │   │   │           │   │   ├── requests
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── __version__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _internal_utils.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── adapters.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── api.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── auth.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── certs.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── compat.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── cookies.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── exceptions.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── help.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── hooks.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── models.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── packages.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── sessions.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── status_codes.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── structures.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── utils.cpython-313.pyc
+│   │   │   │           │   │   │   ├── __version__.py
+│   │   │   │           │   │   │   ├── _internal_utils.py
+│   │   │   │           │   │   │   ├── adapters.py
+│   │   │   │           │   │   │   ├── api.py
+│   │   │   │           │   │   │   ├── auth.py
+│   │   │   │           │   │   │   ├── certs.py
+│   │   │   │           │   │   │   ├── compat.py
+│   │   │   │           │   │   │   ├── cookies.py
+│   │   │   │           │   │   │   ├── exceptions.py
+│   │   │   │           │   │   │   ├── help.py
+│   │   │   │           │   │   │   ├── hooks.py
+│   │   │   │           │   │   │   ├── models.py
+│   │   │   │           │   │   │   ├── packages.py
+│   │   │   │           │   │   │   ├── sessions.py
+│   │   │   │           │   │   │   ├── status_codes.py
+│   │   │   │           │   │   │   ├── structures.py
+│   │   │   │           │   │   │   └── utils.py
+│   │   │   │           │   │   ├── resolvelib
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── providers.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── reporters.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── resolvers.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── structs.cpython-313.pyc
+│   │   │   │           │   │   │   ├── compat
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── collections_abc.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── collections_abc.py
+│   │   │   │           │   │   │   ├── providers.py
+│   │   │   │           │   │   │   ├── py.typed
+│   │   │   │           │   │   │   ├── reporters.py
+│   │   │   │           │   │   │   ├── resolvers.py
+│   │   │   │           │   │   │   └── structs.py
+│   │   │   │           │   │   ├── rich
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __main__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── __main__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _cell_widths.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _emoji_codes.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _emoji_replace.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _export_format.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _extension.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _fileno.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _inspect.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _log_render.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _loop.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _null_file.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _palettes.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _pick.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _ratio.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _spinners.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _stack.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _timer.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _win32_console.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _windows_renderer.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _windows.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _wrap.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── abc.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── align.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── ansi.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── bar.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── box.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── cells.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── color_triplet.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── color.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── columns.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── console.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── constrain.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── containers.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── control.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── default_styles.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── diagnose.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── emoji.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── errors.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── file_proxy.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── filesize.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── highlighter.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── json.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── jupyter.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── layout.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── live_render.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── live.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── logging.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── markup.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── measure.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── padding.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── pager.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── palette.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── panel.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── pretty.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── progress_bar.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── progress.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── prompt.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── protocol.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── region.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── repr.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── rule.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── scope.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── screen.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── segment.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── spinner.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── status.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── style.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── styled.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── syntax.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── table.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── terminal_theme.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── text.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── theme.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── themes.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── traceback.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── tree.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _cell_widths.py
+│   │   │   │           │   │   │   ├── _emoji_codes.py
+│   │   │   │           │   │   │   ├── _emoji_replace.py
+│   │   │   │           │   │   │   ├── _export_format.py
+│   │   │   │           │   │   │   ├── _extension.py
+│   │   │   │           │   │   │   ├── _fileno.py
+│   │   │   │           │   │   │   ├── _inspect.py
+│   │   │   │           │   │   │   ├── _log_render.py
+│   │   │   │           │   │   │   ├── _loop.py
+│   │   │   │           │   │   │   ├── _null_file.py
+│   │   │   │           │   │   │   ├── _palettes.py
+│   │   │   │           │   │   │   ├── _pick.py
+│   │   │   │           │   │   │   ├── _ratio.py
+│   │   │   │           │   │   │   ├── _spinners.py
+│   │   │   │           │   │   │   ├── _stack.py
+│   │   │   │           │   │   │   ├── _timer.py
+│   │   │   │           │   │   │   ├── _win32_console.py
+│   │   │   │           │   │   │   ├── _windows_renderer.py
+│   │   │   │           │   │   │   ├── _windows.py
+│   │   │   │           │   │   │   ├── _wrap.py
+│   │   │   │           │   │   │   ├── abc.py
+│   │   │   │           │   │   │   ├── align.py
+│   │   │   │           │   │   │   ├── ansi.py
+│   │   │   │           │   │   │   ├── bar.py
+│   │   │   │           │   │   │   ├── box.py
+│   │   │   │           │   │   │   ├── cells.py
+│   │   │   │           │   │   │   ├── color_triplet.py
+│   │   │   │           │   │   │   ├── color.py
+│   │   │   │           │   │   │   ├── columns.py
+│   │   │   │           │   │   │   ├── console.py
+│   │   │   │           │   │   │   ├── constrain.py
+│   │   │   │           │   │   │   ├── containers.py
+│   │   │   │           │   │   │   ├── control.py
+│   │   │   │           │   │   │   ├── default_styles.py
+│   │   │   │           │   │   │   ├── diagnose.py
+│   │   │   │           │   │   │   ├── emoji.py
+│   │   │   │           │   │   │   ├── errors.py
+│   │   │   │           │   │   │   ├── file_proxy.py
+│   │   │   │           │   │   │   ├── filesize.py
+│   │   │   │           │   │   │   ├── highlighter.py
+│   │   │   │           │   │   │   ├── json.py
+│   │   │   │           │   │   │   ├── jupyter.py
+│   │   │   │           │   │   │   ├── layout.py
+│   │   │   │           │   │   │   ├── live_render.py
+│   │   │   │           │   │   │   ├── live.py
+│   │   │   │           │   │   │   ├── logging.py
+│   │   │   │           │   │   │   ├── markup.py
+│   │   │   │           │   │   │   ├── measure.py
+│   │   │   │           │   │   │   ├── padding.py
+│   │   │   │           │   │   │   ├── pager.py
+│   │   │   │           │   │   │   ├── palette.py
+│   │   │   │           │   │   │   ├── panel.py
+│   │   │   │           │   │   │   ├── pretty.py
+│   │   │   │           │   │   │   ├── progress_bar.py
+│   │   │   │           │   │   │   ├── progress.py
+│   │   │   │           │   │   │   ├── prompt.py
+│   │   │   │           │   │   │   ├── protocol.py
+│   │   │   │           │   │   │   ├── py.typed
+│   │   │   │           │   │   │   ├── region.py
+│   │   │   │           │   │   │   ├── repr.py
+│   │   │   │           │   │   │   ├── rule.py
+│   │   │   │           │   │   │   ├── scope.py
+│   │   │   │           │   │   │   ├── screen.py
+│   │   │   │           │   │   │   ├── segment.py
+│   │   │   │           │   │   │   ├── spinner.py
+│   │   │   │           │   │   │   ├── status.py
+│   │   │   │           │   │   │   ├── style.py
+│   │   │   │           │   │   │   ├── styled.py
+│   │   │   │           │   │   │   ├── syntax.py
+│   │   │   │           │   │   │   ├── table.py
+│   │   │   │           │   │   │   ├── terminal_theme.py
+│   │   │   │           │   │   │   ├── text.py
+│   │   │   │           │   │   │   ├── theme.py
+│   │   │   │           │   │   │   ├── themes.py
+│   │   │   │           │   │   │   ├── traceback.py
+│   │   │   │           │   │   │   └── tree.py
+│   │   │   │           │   │   ├── tomli
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _parser.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _re.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── _types.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _parser.py
+│   │   │   │           │   │   │   ├── _re.py
+│   │   │   │           │   │   │   ├── _types.py
+│   │   │   │           │   │   │   └── py.typed
+│   │   │   │           │   │   ├── truststore
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _api.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _macos.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _openssl.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _ssl_constants.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── _windows.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _api.py
+│   │   │   │           │   │   │   ├── _macos.py
+│   │   │   │           │   │   │   ├── _openssl.py
+│   │   │   │           │   │   │   ├── _ssl_constants.py
+│   │   │   │           │   │   │   ├── _windows.py
+│   │   │   │           │   │   │   └── py.typed
+│   │   │   │           │   │   ├── typing_extensions.py
+│   │   │   │           │   │   ├── urllib3
+│   │   │   │           │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _collections.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _version.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── connection.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── connectionpool.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── exceptions.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── fields.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── filepost.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── poolmanager.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── request.cpython-313.pyc
+│   │   │   │           │   │   │   │   └── response.cpython-313.pyc
+│   │   │   │           │   │   │   ├── _collections.py
+│   │   │   │           │   │   │   ├── _version.py
+│   │   │   │           │   │   │   ├── connection.py
+│   │   │   │           │   │   │   ├── connectionpool.py
+│   │   │   │           │   │   │   ├── contrib
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── _appengine_environ.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── appengine.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── ntlmpool.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── pyopenssl.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── securetransport.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── socks.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── _appengine_environ.py
+│   │   │   │           │   │   │   │   ├── _securetransport
+│   │   │   │           │   │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   │   ├── bindings.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   │   └── low_level.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── bindings.py
+│   │   │   │           │   │   │   │   │   └── low_level.py
+│   │   │   │           │   │   │   │   ├── appengine.py
+│   │   │   │           │   │   │   │   ├── ntlmpool.py
+│   │   │   │           │   │   │   │   ├── pyopenssl.py
+│   │   │   │           │   │   │   │   ├── securetransport.py
+│   │   │   │           │   │   │   │   └── socks.py
+│   │   │   │           │   │   │   ├── exceptions.py
+│   │   │   │           │   │   │   ├── fields.py
+│   │   │   │           │   │   │   ├── filepost.py
+│   │   │   │           │   │   │   ├── packages
+│   │   │   │           │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   └── six.cpython-313.pyc
+│   │   │   │           │   │   │   │   ├── backports
+│   │   │   │           │   │   │   │   │   ├── __init__.py
+│   │   │   │           │   │   │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   │   ├── makefile.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   │   └── weakref_finalize.cpython-313.pyc
+│   │   │   │           │   │   │   │   │   ├── makefile.py
+│   │   │   │           │   │   │   │   │   └── weakref_finalize.py
+│   │   │   │           │   │   │   │   └── six.py
+│   │   │   │           │   │   │   ├── poolmanager.py
+│   │   │   │           │   │   │   ├── request.py
+│   │   │   │           │   │   │   ├── response.py
+│   │   │   │           │   │   │   └── util
+│   │   │   │           │   │   │       ├── __init__.py
+│   │   │   │           │   │   │       ├── __pycache__
+│   │   │   │           │   │   │       │   ├── __init__.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── connection.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── proxy.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── queue.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── request.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── response.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── retry.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── ssl_.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── ssl_match_hostname.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── ssltransport.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── timeout.cpython-313.pyc
+│   │   │   │           │   │   │       │   ├── url.cpython-313.pyc
+│   │   │   │           │   │   │       │   └── wait.cpython-313.pyc
+│   │   │   │           │   │   │       ├── connection.py
+│   │   │   │           │   │   │       ├── proxy.py
+│   │   │   │           │   │   │       ├── queue.py
+│   │   │   │           │   │   │       ├── request.py
+│   │   │   │           │   │   │       ├── response.py
+│   │   │   │           │   │   │       ├── retry.py
+│   │   │   │           │   │   │       ├── ssl_.py
+│   │   │   │           │   │   │       ├── ssl_match_hostname.py
+│   │   │   │           │   │   │       ├── ssltransport.py
+│   │   │   │           │   │   │       ├── timeout.py
+│   │   │   │           │   │   │       ├── url.py
+│   │   │   │           │   │   │       └── wait.py
+│   │   │   │           │   │   └── vendor.txt
+│   │   │   │           │   └── py.typed
+│   │   │   │           └── pip-25.0.dist-info
+│   │   │   │               ├── AUTHORS.txt
+│   │   │   │               ├── entry_points.txt
+│   │   │   │               ├── INSTALLER
+│   │   │   │               ├── LICENSE.txt
+│   │   │   │               ├── METADATA
+│   │   │   │               ├── RECORD
+│   │   │   │               ├── REQUESTED
+│   │   │   │               ├── top_level.txt
+│   │   │   │               └── WHEEL
+│   │   │   └── pyvenv.cfg
+│   │   ├── Anthropic_MCP.ipynb
+│   │   ├── anthropic_model_selector.py
+│   │   ├── anthropic_models_metadata.json
+│   │   ├── API-Spec-Agent.ipynb
+│   │   ├── app.py
+│   │   ├── Autogen.ipynb
+│   │   ├── backups
+│   │   │   ├── AA-10.py
+│   │   │   ├── AA-11.py
+│   │   │   ├── AA-12.py
+│   │   │   ├── AA-13.py
+│   │   │   ├── AA-14.py
+│   │   │   ├── AA-24.py
+│   │   │   ├── AA-25.py
+│   │   │   ├── AA-26.py
+│   │   │   ├── AA-27.py
+│   │   │   ├── AA-28.py
+│   │   │   ├── AA-29.py
+│   │   │   ├── AA-30.py
+│   │   │   ├── AA-31.py
+│   │   │   ├── AA-32.py
+│   │   │   ├── AA-33.py
+│   │   │   ├── AA-34.py
+│   │   │   ├── AA-35.py
+│   │   │   ├── AA-36.py
+│   │   │   ├── AA.py
+│   │   │   ├── AA1.py
+│   │   │   ├── AA2.py
+│   │   │   ├── AA3.py
+│   │   │   ├── AA4.py
+│   │   │   ├── AA5.py
+│   │   │   ├── AA6.py
+│   │   │   ├── AA7.py
+│   │   │   ├── AA8.py
+│   │   │   ├── AA9.py
+│   │   │   ├── SAwTWS2.py
+│   │   │   ├── SAwTWS3.py
+│   │   │   ├── Streamlit_App2.py
+│   │   │   ├── Streamlit_App3.py
+│   │   │   └── Streamlit_App4_with_Tav_WebSearch.py
+│   │   ├── BYOAF.ipynb
+│   │   ├── chat_completions_log.json
+│   │   ├── Comparison-Autogen-LangChain-Ecosystems.ipynb
+│   │   ├── config.yaml
+│   │   ├── dynamic_page_source.html
+│   │   ├── LangChain-Ecosystem.ipynb
+│   │   ├── LlamaIndex.ipynb
+│   │   ├── log.txt
+│   │   ├── media
+│   │   │   └── mcp.gif
+│   │   ├── models_list.json
+│   │   ├── models_metadata_scraped.json
+│   │   ├── OpenAI_Chat_Completions.ipynb
+│   │   ├── openai_model_links.json
+│   │   ├── openai_model_selector.py
+│   │   ├── openai_models_metadata.json
+│   │   ├── output.md
+│   │   ├── pages
+│   │   │   └── page1.py
+│   │   ├── requirements.txt
+│   │   ├── sample_docs.txt
+│   │   ├── Streamlit.ipynb
+│   │   ├── updated_requirements.txt
+│   │   ├── weather_memory.json
+│   │   └── WeatherAgent.ipynb
+│   ├── 8-Integration-into-Interactive-Applications
+│   ├── 9-Assistant-API-Integration
+│   ├── a10-Chatbot-Evaluation
+│   ├── a11-Fine-Tuning-LLMs
+│   ├── a12-Graph-Data-Structures-and-Applications-with-LangGraph
+│   ├── a13-Project-Preparation-and-Integration
+│   ├── a14-Responsible-AI-Practices-and-Project
+│   │   └── Week-14-Responsible-AI-Pract.textClipping
+│   ├── a15-Final-Project-Presentations-and App-Review
+│   └── LLM-Images
+│       ├── AI-Agents-Stack.jpeg
+│       ├── eq1.png
+│       ├── Eq2.png
+│       ├── Fig1-LLM-Capabilities.png
+│       ├── Fig10-Augmented-LSTM-Network-Cell-System-Schematics.png
+│       ├── Fig10-RLHF.png
+│       ├── Fig11-GPT3-4-Exam-results.png
+│       ├── Fig12-Training-of-LLaMA-2-Chat.png
+│       ├── Fig13-Relative-Response-Quality-of-Vicuna.png
+│       ├── Fig14-Flan-PaLM- finetuning.png
+│       ├── Fig16-Model-architecture-details-of-Gopher.png
+│       ├── Fig17-High-level-model-architecture-of-ERNIE.png
+│       ├── Fig18-Retro-architecture.png
+│       ├── Fig19-GLaM-model-architecture.png
+│       ├── Fig2-The-Paper-Structure.png
+│       ├── Fig20-Different-OPT-Models-architecture.png
+│       ├── Fig21-Sparrow-pipeline.png
+│       ├── Fig22-An-overview-of-UL2-pretraining-paradigm.png
+│       ├── Fig23-An-overview-of-BLOOM-architecture.png
+│       ├── Fig24-Timeline-of-some-of-the-most-representative-LLM-frameworks.png
+│       ├── Fig25-This-figure-shows-different-components-of-LLMs.png
+│       ├── Fig26-High-level-overview-of-transformer-work.png
+│       ├── Fig27-Subsequent-stages.png
+│       ├── Fig28-Various-positional-encodings-are-employed-in-LLMs.png
+│       ├── Fig3-BERT-PreTraining-Fine-Tuning.png
+│       ├── Fig4-BERT-Comparison.png
+│       ├── Fig5-Corss-Lingual-lang-model-pretraining.png
+│       ├── Fig6-LM-Pretraining-Overview.png
+│       ├── Fig7-High-level-overview-GPT.png
+│       ├── Fig8-Popular-LLM-Families.png
+│       ├── Fig9-GPT3.png
+│       ├── Figure-1-The-Transformer-model-architecture.png
+│       ├── Figure-2-SDPA-MHA.png
+│       ├── Google-AI.png
+│       ├── openai-lockup.png
+│       └── openai-white-lockup.png
+├── Papers
+│   ├──  GUI Agent.pdf
+│   ├──  LLM-based Agents for Automated Bug Fixing.pdf
+│   ├── 10-Audio-RAG-Use-Cases.pdf
+│   ├── 1730120205053.pdf
+│   ├── 1731669761020.pdf
+│   ├── 1734286392681.pdf
+│   ├── 1734432880533.pdf
+│   ├── 1734773478124.pdf
+│   ├── 1735042996276.pdf
+│   ├── 1735460487464.pdf
+│   ├── 1739818047281.pdf
+│   ├── 1741875922072.pdf
+│   ├── 20_LLM_Guardrails.pdf
+│   ├── 2412.03624v1.pdf
+│   ├── 2412.17149v1.pdf
+│   ├── 7-Agentic-RAG-System.pdf
+│   ├── A Prompt-Based Knowledge Graph Foundation Model.pdf
+│   ├── A Taxonomy of AgentOps.pdf
+│   ├── A_Survey_of_Text_Representation_and_Embedding_Techniques_in_NLP.pdf
+│   ├── A-Framework-for-Evaluating-Emerging-Cyberattack-Capabilities-of-AI.pdf
+│   ├── A-Framework-for-Robust-Cognitive-Evaluation-of-LLMs.pdf
+│   ├── A-MEM-Agentic-Memory-for-LLM-Agents.pdf
+│   ├── A-survey-of-embedding-models-text-graphs.pdf
+│   ├── A-survey-of-foliations-and-operator-algebras.pdf
+│   ├── A-Survey-on-Contextual-Embeddings.pdf
+│   ├── A-Survey-on-Large-Language-Model-based-Autonomous-Agents.pdf
+│   ├── A-Survey-on-LLM-powered-Agents-for-Recommender-Systems.pdf
+│   ├── Adaptive-Graph-of-Thoughts-Test-Time-Adaptive-Reasoning-Unifying-Chain-Tree-and-Graph-Structures.pdf
+│   ├── Adaptive-Graph-of-Thoughts.pdf
+│   ├── Adaptive-Retrieval-without-Self-Knowledge.pdf
+│   ├── ADVANCES-AND-CHALLENGES-IN-FOUNDATION-AGENTS-FROM-BRAIN-INSPIRED-INTELLIGENCE-TO-EVOLUTIONARY-COLLABORATIVE-AND-SAFE-SYSTEMS.pdf
+│   ├── ADVANCES-AND-CHALLENGES-IN-FOUNDATION-AGENTS.pdf
+│   ├── Affordable-AI-Assistants-with-Knowledge-Graph-of-Thoughts.pdf
+│   ├── Agent Laboratory.pdf
+│   ├── agent-mindset-phrases.pdf
+│   ├── Agent-use-cases.pdf
+│   ├── AGENTI-RETRIEVAL-AUGMENTED-GENERATION-A-SURVEY-ON-AGENTIC-RAG.pdf
+│   ├── Agentic-AI-Report.pdf
+│   ├── Agentic-AI-Resources.pdf
+│   ├── Agentic-Deep-Graph-Reasoning-Yields-Self-Organizing-Knowledge-Networks.pdf
+│   ├── agentic-frameworks-cheatsheet.pdf
+│   ├── Agentic-Guide.pdf
+│   ├── Agentic-Reasoning-Reasoning-LLMs-with-Tools-for-the-Deep-Research.pdf
+│   ├── AGENTLESS-Demystifying-LLM-based-Software-Engineering-Agents.pdf
+│   ├── agentops.pdf
+│   ├── Agents Are Not Enough.pdf
+│   ├── Agents for Automated Bug Fixing.pdf
+│   ├── Agents Thinking Fast and Slow.pdf
+│   ├── Agents_Companion.pdf
+│   ├── Agents-Are-Not-Enough.pdf
+│   ├── Ai_Governance_Mega_Map.pdf
+│   ├── AI_innovation.pdf
+│   ├── AI-and-mental-healthcare-ethical-and-regulatory-considerations.pdf
+│   ├── AI-CUDA-Engineer.pdf
+│   ├── AI-Research-in-Health-Care.pdf
+│   ├── AIGS.pdf
+│   ├── AIR-BENCH 2024.pdf
+│   ├── AirRAG.pdf
+│   ├── An-Autonomy-Based-Classification.pdf
+│   ├── ARC-Prize-2024.pdf
+│   ├── Artificial-Intelligence-and-the-Future-of-Teaching-and-Learning.pdf
+│   ├── ask-sage.pdf
+│   ├── ATO as Code.pdf
+│   ├── Auto-Differentiating-Any-LLM-Workflow-A-Farewell-to-Manual-Prompting.pdf
+│   ├── AutoDefense.pdf
+│   ├── Automated Design of Agentic Systems.pdf
+│   ├── BAICHUAN-OMNI TECHNICAL REPORT.pdf
+│   ├── Base-vs-Instruction-Tuned-LLM.pdf
+│   ├── Benchmarking-And-Datasets-For-Ambient-Clinical-Documentation.pdf
+│   ├── Benefits-Limits-and-Risks-of-GPT-4-as-an-AI-Chatbot-for-Medicine.pdf
+│   ├── Brain-in-the-Dark-Design-Principles-for-Neuromimetic-Inference-under-the-Free-Energy-Principle.pdf
+│   ├── Brain-inspired-and-Self-based-Artificial-Intelligence.pdf
+│   ├── BrowseComp-A-Simple-Yet-Challenging-Benchmark-for-Browsing-Agents.pdf
+│   ├── Cache-Augmented-Generation.pdf
+│   ├── Can-1B-LLM-Surpass-405B-LLM-Rethinking-Compute-Optimal-Test-Time-Scaling.pdf
+│   ├── Causal-Inference-Meets-Deep-Learning-survey.pdf
+│   ├── CDO_Hiring_A_Data_Scientist_508.pdf
+│   ├── Chain-of-Retrieval-Augmented-Generation.pdf
+│   ├── CI-CD-LLM-Apps.pdf
+│   ├── ClinicalBench.pdf
+│   ├── Clio.pdf
+│   ├── CoAT-Chain-of-Associated-Thoughts-Framework-for-Enhancing-Large-Language-Models-Reasoning.pdf
+│   ├── Code-I-O-Condensing-Reasoning-Patterns-via-Code-Input-Output-Prediction.pdf
+│   ├── Code-to-Think-Think-to-Code-A Survey.pdf
+│   ├── CODESWIFT-Accelerating-LLM-Inference-for-Efficient-Code-Generation.pdf
+│   ├── CoFE-RAG.pdf
+│   ├── Competitive-Programming-with-Large-Reasoning-Models.pdf
+│   ├── Context Awareness Gate For Retrieval Augmented Generation.pdf
+│   ├── Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf
+│   ├── Counting Ability of Large Language Models and Impact of Tokenization.pdf
+│   ├── crewai.jpeg
+│   ├── CTIBench.pdf
+│   ├── DataScience.pdf
+│   ├── Decoding substance use disorder-severity-from-clinical-notes-using-a-large-language-model.pdf
+│   ├── Deep-Research-with-o3-mini-high-analysis-of-the-main-agentic-frameworks.pdf
+│   ├── DeepSeek_R1.pdf
+│   ├── DEMYSTIFYING-EMBEDDING-SPACES-USING-LARGE-LANGUAGE-MODELS.pdf
+│   ├── DHS-AI-Playbook.pdf
+│   ├── Do-Large-Language-Models-Mirror-Cognitive-Language-Processing.pdf
+│   ├── DocLayNet.pdf
+│   ├── Enhance Novelty and Diversity of LLM Generated Ideas.pdf
+│   ├── Evolving-Deeper-LLM-Thinking.pdf
+│   ├── Extending-Language-Model-Context-Up-to-3-Million-Tokens-on-a-Single-GPU.pdf
+│   ├── FedRAMP-Authorization-Boundary-Guidance.pdf
+│   ├── Fin-R1-2503.16252v1.pdf
+│   ├── Finetuning-Dictionary.pdf
+│   ├── Foundations-of-LLMs.pdf
+│   ├── From-Markov-to-Laplace-How-Mamba-In-Context-Learns-Markov-Chains.pdf
+│   ├── From-RAG-to-Memory-Non-Parametric-Continual-Learning-for-Large-Language-Models.pdf
+│   ├── Frontier Models are Capable of In-context Scheming.pdf
+│   ├── GEAR.pdf
+│   ├── Generating-Symbolic-World-Models-via-Test-time-Scaling-of-Large-Language-Models.pdf
+│   ├── Generative Agent Simulations of 1000 People.pdf
+│   ├── Generative Agents.pdf
+│   ├── Generative AI in Medicine.pdf
+│   ├── Generative-Agent-Simulations-of-1000-People.pdf
+│   ├── Gold-medalist-Performance-in-Solving-Olympiad-Geometry-with-AlphaGeometry2.pdf
+│   ├── Golden-Retriever.pdf
+│   ├── Google_Prompt_Engineering_v7.pdf
+│   ├── Google-Agents.pdf
+│   ├── Google-AI-Agents.pdf
+│   ├── Google-AI-Agents2.pdf
+│   ├── GPT
+│   │   ├── 2024-10-14_18_45_30_export.csv
+│   │   ├── ConnectedPapers-for-Improving-Language-Understanding-by-Generative-Pre%20Training.bib
+│   │   ├── gpt-4.pdf
+│   │   ├── Language Models are Few-Shot Learners.pdf
+│   │   ├── language_models_are_unsupervised_multitask_learners.pdf
+│   │   ├── language_understanding_paper.pdf
+│   │   └── Putting GPT-4o to the Sword.pdf
+│   ├── Graph Foundation Model.pdf
+│   ├── GSM-Symbolic.pdf
+│   ├── Guide to Transformers.pdf
+│   ├── Guide-to-RAG-vs-Agentic-RAG.pdf
+│   ├── HALLUCINATION-MITIGATION-USING-AGENTIC-AI-NATURAL-LANGUAGE-BASED-FRAMEWORKS.pdf
+│   ├── HHS-AI-2025.pdf
+│   ├── High-level Automated Reasoning Paradigm in In-Context Learning via MCTS.pdf
+│   ├── How to Read a Paper.pdf
+│   ├── How-To-Add-Memory-To-The-Self-Attention-Mechanism.pdf
+│   ├── How-to-Linearize-the-Attention-Mechanism.pdf
+│   ├── HtmlRAG.pdf
+│   ├── human–AI-feedback-loops.pdf
+│   ├── HumanEval-Pro-and-MBPP-Pro.pdf
+│   ├── Humanitys-Last-Exam.pdf
+│   ├── Hymba.pdf
+│   ├── ICLERB.pdf
+│   ├── Improve-RAG-Performance-with-Contextual-Retrieval.pdf
+│   ├── Improving-Text-Embeddings-with-Large-Language-Models.pdf
+│   ├── INCREASING-THE-LLM-ACCURACY-FOR-QUESTION-ANSWERING.pdf
+│   ├── INFINITE-RECURSION-RETHINKING-THINKING-AUTOMATING-THE-AI-RESEARCHER-WITH-GENERATIVE-ALGORITHMS.pdf
+│   ├── Infinite-Retrieval-Attention-Enhanced-LLMs-in-Long-Context-Processing.pdf
+│   ├── Inner-Thinking-Transformer.pdf
+│   ├── Intrinsically-Motivated-Humans-and-Agents-in-Open-World-Exploration.pdf
+│   ├── Introduction to Graph Neural Networks.pdf
+│   ├── Introduction-to-Graph-Neural-Networks.pdf
+│   ├── Investigating-Affective-Use-and-Emotional-Well-being-on-ChatGPT.pdf
+│   ├── KET-RAG-A-Cost-Efficient-Multi-Granular-Indexing-Framework-for-Graph-RAG.pdf
+│   ├── KG-LLM-Bench-A-Scalable-Benchmark-for-Evaluating-LLM-Reasoning-on-Textualized-Knowledge-Graphs.pdf
+│   ├── KIMI-K1-5.pdf
+│   ├── Knowledge-Graph-Enhancement-Language-Agents-for-Recommendation.pdf
+│   ├── KNOWLEDGE-INTENSIVE QA IN MEDICINEpdf.pdf
+│   ├── Knowledge-is-Power- Harnessing-Large-Language-Models-for-Enhanced-Cognitive-Diagnosis.pdf
+│   ├── KnowPath-Knowledge-enhanced-Reasoning-via-LLM-generated-Inference-Paths-over-Knowledge-Graphs.pdf
+│   ├── L1-Controlling-How-Long-A-Reasoning-Model-Thinks-With-Reinforcement-Learning.pdf
+│   ├── LaB-RAG.pdf
+│   ├── Language-Model-Can-Listen-While-Speaking.pdf
+│   ├── Language-Models-are-Universal-Embedders.pdf
+│   ├── Large Concept Models.pdf
+│   ├── Large-Concept-Models.pdf
+│   ├── Large-Language-Models-and-Cognitive-Science-A-Comprehensive-Review-of-Similarities-Differences-and-Challenges.pdf
+│   ├── Large-language-models-for-artificial-general-intelligence-AGI.pdf
+│   ├── Learning-Symbolic-Task-Decompositions-for-Multi-Agent-Teams.pdf
+│   ├── Lessons-From-Red-Teaming-100-Generative-AI-Products.pdf
+│   ├── LIMO-Less-is-More-for-Reasoning.pdf
+│   ├── Liquid-Foundation-Models--Our-First-Series-of-Generative-AI-Models.pdf
+│   ├── Llama
+│   │   ├── CodeLlama.pdf
+│   │   ├── Llama-1.pdf
+│   │   ├── Llama-2.pdf
+│   │   └── Llama-3.pdf
+│   ├── LLaMA - Open and Efficient Foundation Language Models.pdf
+│   ├── LLM-Engineers-Handbook-Color-Images.pdf
+│   ├── LLM-Judge.pdf
+│   ├── LLMs-Can-Easily-Learn-to-Reason-from-Demonstrations-Structure-not-content-is-what-matters.pdf
+│   ├── LLMS-CAN-REALIZE-COMBINATORIAL-CREATIVITY.pdf
+│   ├── Logical-Reasoning-in-Large-Language-Models-A-Survey.pdf
+│   ├── Low-Rank-Agent-Specific-Adaptation-LoRASA-for-Multi-Agent-Policy-Learning.pdf
+│   ├── Low-Rank-Projection-of-Attention-Matrices-Linformer.pdf
+│   ├── Magentic-One.pdf
+│   ├── Marco-o1.pdf
+│   ├── Mastering-Agents.pdf
+│   ├── Mastra-Open-Source-Agent-Framework-Typescript.pdf
+│   ├── Math-for-ML.pdf
+│   ├── Mathematics-of-Machine-Learning.pdf
+│   ├── Mathematics-of-Neural-Networks.pdf
+│   ├── Meta-Reasoner.pdf
+│   ├── MetaChain-A-Fully-Automated-and-Zero-Code-Framework-for-LLM-Agents.pdf
+│   ├── Migrating-Code-At-Scale-With-LLMs-At-Google.pdf
+│   ├── MINIRAG-TOWARDS-EXTREMELY-SIMPLE-RETRIEVAL-AUGMENTED-GENERATION.pdf
+│   ├── Model-Cards.pdf
+│   ├── Mulberry.pdf
+│   ├── Multi-Agent-Agentic-RAG-Systems.pdf
+│   ├── Multi-Agent-Design-Optimizing-Agents-with-Better-Prompts-and-Topologies.pdf
+│   ├── Multi-Reranker.pdf
+│   ├── Neural-Operator.pdf
+│   ├── NeurIPS-2021-practical-large-scale-linear-programming-using-primal-dual-hybrid-gradient-Paper.pdf
+│   ├── Neuro-Symbolic AI in 2024.pdf
+│   ├── Next-Generation-Database-Interfaces-A-Survey-of-LLM-based-Text-to-SQL.pdf
+│   ├── NIST-AI-100-2e2025.pdf
+│   ├── NIST.AI.800-1.ipd2.pdf
+│   ├── NodeRAG.pdf
+│   ├── NOT ALL ATTENTION IS NEEDED.pdf
+│   ├── Nova.pdf
+│   ├── O1 Replication Journey – Part 2.pdf
+│   ├── O1 Replication Journey- A Strategic Progress Report – Part 1.pdf
+│   ├── Offline Reinforcement Learning for LLM Multi-Step Reasoning.pdf
+│   ├── OmniDocBench.pdf
+│   ├── OmniPred.pdf
+│   ├── Path-RAG.pdf
+│   ├── Phi-4-Tech-Report.pdf
+│   ├── PIP-KAG-Mitigating-Knowledge-Conflict.pdf
+│   ├── Predicting-Human-Brain-States-with-Transformer.pdf
+│   ├── PROCESSBENCH.pdf
+│   ├── Prompt Formatting .pdf
+│   ├── Prompt-Engineering-Toolkit.pdf
+│   ├── Public-Sector-AI-Playbook.pdf
+│   ├── PWC-Agentic-Automation.pdf
+│   ├── Qwen2-5-Technical-Report.pdf
+│   ├── RAG-Agents.pdf
+│   ├── RAG-Dictionary.pdf
+│   ├── RAG-Evaluation-Guide.pdf
+│   ├── RAG-Types.pdf
+│   ├── Rankify-A-Comprehensive-Python-Toolkit-for-Retrieval-Re-Ranking-and-Retrieval-Augmented-Generation.pdf
+│   ├── RE-Bench.pdf
+│   ├── Reasoning-Language-Models-A-Blueprint.pdf
+│   ├── Reasoning.pdf
+│   ├── Red-Team-Lessons.pdf
+│   ├── Retrieval Interleaved Generation (RIG).pdf
+│   ├── Retrieval-Augmented-Generation-for-Large-Language-Models-A-Survey.pdf
+│   ├── rStar-Math.pdf
+│   ├── S-Test-Time-Scaling-for-Code-Generation.pdf
+│   ├── s1-Simple-test-time-scaling.pdf
+│   ├── Scaling-of-Search-and-Learning.pdf
+│   ├── Search Verify and Feedback.pdf
+│   ├── Search-o1-Agentic-Search-Enhanced-Large-Reasoning-Models.pdf
+│   ├── Search-o1.pdf
+│   ├── Search,Verify and Feedback.pdf
+│   ├── SELECTIVE ATTENTION IMPROVES TRANSFORMER.pdf
+│   ├── Self-Organizing Graph Reasoning.pdf
+│   ├── SEMANTIC BACKPROPAGATION ON LANGUAGE-BASED AGENTIC SYSTEMS.pdf
+│   ├── Semantic-Hypergraphs.pdf
+│   ├── Serving-Deep-Learning-Models-from-Relational-Databases.pdf
+│   ├── SETS-Leveraging-Self-Verification-and-Self-Correction-for-Improved-Test-Time-Scaling.pdf
+│   ├── SimGRAG.pdf
+│   ├── simpleqa.pdf
+│   ├── SmolLM2-When-Smol-Goes-Big—Data-Centric-Training-of-a-Small-Language-Model.pdf
+│   ├── Stableprompt.pdf
+│   ├── Stanford-MIT-AI-Cheatsheets.pdf
+│   ├── STAR ATTENTION.pdf
+│   ├── STRUCTRAG.pdf
+│   ├── Styles-Prompting.pdf
+│   ├── Superintelligent-Agents-Pose-Catastrophic-Risks-Can-Scientist-AI-Offer-a-Safer-Path.pdf
+│   ├── SWE-RL.pdf
+│   ├── SymAgent-A-Neural-Symbolic-Self-Learning-Agent-Framework-for-Complex-Reasoning-over-Knowledge-Graphs.pdf
+│   ├── Synthetic-Data-Generation-Multi-Step-RL-for-Reasoning-Tool-Use.pdf
+│   ├── System Design Blueprint.pdf
+│   ├── System-Design.pdf
+│   ├── The AI Scientist.pdf
+│   ├── The Perfect Blend.pdf
+│   ├── The-AI-Agent-Index.pdf
+│   ├── THE-COMPLEXITY-DYNAMICS-OF-GROKKING.pdf
+│   ├── The-Danger-of-Overthinking-Examining-the-Reasoning-Action-Dilemma-in-Agentic-Tasks.pdf
+│   ├── The-Impact-of-Generative-AI-on-Critical-Thinking.pdf
+│   ├── The-Prompt-Report.pdf
+│   ├── TheAgentCompany.pdf
+│   ├── THINKING LLMS.pdf
+│   ├── ThoughtProbe.pdf
+│   ├── Titans.pdf
+│   ├── Token-Embeddings-Violate-the-Manifold-Hypothesis.pdf
+│   ├── Top-10-Agentic-AI-Threats-Mitigations.pdf
+│   ├── Towards Knowledge Checking in Retrieval-augmented Generation.pdf
+│   ├── TOWARDS-INTERNET-SCALE-TRAINING-FOR-AGENTS.pdf
+│   ├── Towards-Large-Reasoning-Models.pdf
+│   ├── TRANSFORMER2-SELF-ADAPTIVE-LLMS.pdf
+│   ├── Transformers-sheet.pdf
+│   ├── Transformers-without-Normalization.pdf
+│   ├── Transforming-Science-with-Large-Language-Models-A-Survey.pdf
+│   ├── Turning-large-language-models-into-cognitive-models.pdf
+│   ├── TxGemma-Efficient-and-Agentic-LLMs-for-Therapeutics.pdf
+│   ├── ULLME.pdf
+│   ├── Understanding LLMs- A Comprehensive Overview from Training to Inference.pdf
+│   ├── Understanding-the-Gated-Recurrent-Units.pdf
+│   ├── Understanding-the-Limits-of-Lifelong-Knowledge-Editing-in-LLMs.pdf
+│   ├── Understanding-The-LSTM-Layer.pdf
+│   ├── Understanding-The-Self-Attention.pdf
+│   ├── US_UK_AI Safety Institute_ December_Publication-OpenAIo1.pdf
+│   ├── Using-the-Tools-of-Cognitive-Science-to-Understand-Large-Language-Models-at-Different-Levels-of-Analysis.pdf
+│   ├── uspto-ai-strategy.pdf
+│   ├── Vector-Calculus.pdf
+│   ├── VISRAG.pdf
+│   ├── WaferLLM.pdf
+│   ├── Weaviate-Advanced-RAG-Techniques-ebook.pdf
+│   ├── Weaviate-Agentic-Architectures-ebook.pdf
+│   ├── What-is-Deep-Research.pdf
+│   ├── What-Makes-Data-Suitable-for-a-Locally-Connected-Neural-Network.pdf
+│   ├── When-One-LLM-Drools-Multi-LLM-Collaboration-Rules.pdf
+│   ├── Which-Economic-Tasks-are-Performed-with-AI-Evidence-from-Millions-of-Claude-Conversations.pdf
+│   ├── Which-LLMs-Work-Best-for-AI-Agents.pdf
+│   ├── XGRAMMAR.pdf
+│   ├── YinYang-Align-Benchmarking.pdf
+│   ├── ZEP-A-TEMPORAL-KNOWLEDGE-GRAPH-ARCHITECTURE-FOR-AGENT-MEMORY.pdf
+│   └── ZERO-SHOT-PLANNING.pdf
+├── README.md
+├── tree_output.txt
+└── tree.txt
+
+143 directories, 1399 files
