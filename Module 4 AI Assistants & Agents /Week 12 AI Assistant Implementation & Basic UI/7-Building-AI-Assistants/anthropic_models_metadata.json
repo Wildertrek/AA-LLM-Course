@@ -1,0 +1,266 @@
+{
+    "claude-3-7-sonnet": {
+      "display_name": "Claude 3.7 Sonnet",
+      "summary": "Our most intelligent Claude model; togglable extended thinking for up to 64k tokens.",
+      "attributes": {
+        "Intelligence": "Highest",
+        "Speed": "Fast",
+        "Price": "$3.00 • $15.00"
+      },
+      "description": "Claude 3.7 Sonnet is Anthropic’s latest most capable model, featuring toggleable extended thinking to produce outputs up to 64k tokens. The default output is 8192 tokens, but can be extended to 64000 via a special header. Multilingual, vision-enabled, for complex tasks.",
+      "context_window": 200000,
+      "max_output_tokens": 64000,
+      "knowledge_cutoff": "Oct 2024",
+      "pricing": {
+        "input": "$3.00",
+        "output": "$15.00",
+        "extended_thinking": "64000 tokens possible with header output-128k-2025-02-19"
+      },
+      "quick_comparison": {
+        "Claude 3.7 Sonnet": "$3.00 / $15.00",
+        "Claude 3.5 Sonnet": "$3.00 / $15.00",
+        "Claude 3.5 Haiku": "$0.80 / $4.00"
+      },
+      "modalities": {
+        "text": {
+          "input": true,
+          "output": true
+        },
+        "vision": {
+          "input": true,
+          "output": false
+        },
+        "audio": {
+          "input": false,
+          "output": false
+        }
+      },
+      "endpoints": {
+        "Chat Completions": "v1/complete", 
+        "Messages": "v1/messages",
+        "Batch": "v1/batch",
+        "Streaming": "Supported",
+        "Embeddings": "Not supported"
+      },
+      "features": {
+        "Multilingual": "Yes",
+        "Extended thinking": "Yes",
+        "Vision": "Yes"
+      },
+      "snapshots": [
+        "claude-3-7-sonnet-20250219", 
+        "claude-3-7-sonnet"
+      ],
+      "rate_limits": {
+        "Tier 1": {
+          "RPM": 500,
+          "TPM": 50000
+        }
+      }
+    },
+      "claude-3-5-sonnet": {
+      "display_name": "Claude 3.5 Sonnet",
+      "summary": "Previous high capability model with up to 8192 output tokens.",
+      "attributes": {
+        "Intelligence": "High",
+        "Speed": "Fast",
+        "Price": "$3.00 • $15.00"
+      },
+      "description": "Claude 3.5 Sonnet is our previously most intelligent model, still offering strong performance up to 8192 tokens. No extended thinking mode. Multilingual, vision-enabled.",
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "knowledge_cutoff": "Apr 2024",
+      "pricing": {
+        "input": "$3.00",
+        "output": "$15.00"
+      },
+      "quick_comparison": {
+        "Claude 3.5 Sonnet": "$3.00 / $15.00",
+        "Claude 3.5 Haiku": "$0.80 / $4.00",
+        "Claude 3 Opus": "$15.00 / $75.00"
+      },
+      "modalities": {
+        "text": {
+          "input": true,
+          "output": true
+        },
+        "vision": {
+          "input": true,
+          "output": false
+        },
+        "audio": {
+          "input": false,
+          "output": false
+        }
+      },
+      "endpoints": {
+        "Chat Completions": "v1/complete",
+        "Messages": "v1/messages",
+        "Batch": "v1/batch",
+        "Streaming": "Supported",
+        "Embeddings": "Not supported"
+      },
+      "features": {
+        "Multilingual": "Yes",
+        "Extended thinking": "No",
+        "Vision": "Yes"
+      },
+      "snapshots": [
+        "claude-3-5-sonnet-20241022",
+        "claude-3-5-sonnet-20240620",
+        "claude-3-5-sonnet"
+      ],
+      "rate_limits": {
+        "Tier 1": {
+          "RPM": 500,
+          "TPM": 40000
+        }
+      }
+    },
+  
+    "claude-3-5-haiku": {
+      "display_name": "Claude 3.5 Haiku",
+      "summary": "The fastest among 3.5 models, up to 8192 tokens, cheap cost.",
+      "attributes": {
+        "Intelligence": "Medium",
+        "Speed": "Fastest",
+        "Price": "$0.80 • $4.00"
+      },
+      "description": "Claude 3.5 Haiku is a speedy variant with up to 8192 tokens output. Ideal when you want quick responses over absolute top intelligence. Multilingual, vision, no extended thinking.",
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "knowledge_cutoff": "July 2024",
+      "pricing": {
+        "input": "$0.80",
+        "output": "$4.00"
+      },
+      "quick_comparison": {
+        "Claude 3.5 Haiku": "$0.80 / $4.00",
+        "Claude 3.5 Sonnet": "$3.00 / $15.00"
+      },
+      "modalities": {
+        "text": {
+          "input": true,
+          "output": true
+        },
+        "vision": {
+          "input": true,
+          "output": false
+        }
+      },
+      "endpoints": {
+        "Chat Completions": "v1/complete",
+        "Messages": "v1/messages",
+        "Batch": "v1/batch",
+        "Streaming": "Supported",
+        "Embeddings": "Not supported"
+      },
+      "features": {
+        "Multilingual": "Yes",
+        "Extended thinking": "No",
+        "Vision": "Yes"
+      },
+      "snapshots": [
+        "claude-3-5-haiku-20241022",
+        "claude-3-5-haiku"
+      ],
+      "rate_limits": {}
+    },
+  
+    "claude-3-opus": {
+      "display_name": "Claude 3 Opus",
+      "summary": "A powerful model for complex tasks; up to 4096 tokens output.",
+      "attributes": {
+        "Intelligence": "High",
+        "Speed": "Moderately fast",
+        "Price": "$15.00 • $75.00"
+      },
+      "description": "Claude 3 Opus is designed for advanced, complex tasks requiring high-level intelligence. Up to 4096 tokens. Offers strong reasoning abilities, multilingual and vision as well.",
+      "context_window": 200000,
+      "max_output_tokens": 4096,
+      "knowledge_cutoff": "Aug 2023",
+      "pricing": {
+        "input": "$15.00",
+        "output": "$75.00"
+      },
+      "quick_comparison": {
+        "Claude 3 Opus": "$15.00 / $75.00"
+      },
+      "modalities": {
+        "text": {
+          "input": true,
+          "output": true
+        },
+        "vision": {
+          "input": true,
+          "output": false
+        }
+      },
+      "endpoints": {
+        "Chat Completions": "v1/complete",
+        "Messages": "v1/messages",
+        "Batch": "v1/batch",
+        "Streaming": "Supported",
+        "Embeddings": "Not supported"
+      },
+      "features": {
+        "Multilingual": "Yes",
+        "Extended thinking": "No",
+        "Vision": "Yes"
+      },
+      "snapshots": [
+        "claude-3-opus-20240229",
+        "claude-3-opus"
+      ],
+      "rate_limits": {}
+    },
+  
+    "claude-3-haiku": {
+      "display_name": "Claude 3 Haiku",
+      "summary": "Fastest and most compact model, up to 4096 tokens, near-instant responses.",
+      "attributes": {
+        "Intelligence": "Average",
+        "Speed": "Fastest",
+        "Price": "$0.25 • $1.25"
+      },
+      "description": "Claude 3 Haiku is the smallest, fastest model in the Claude 3 family. Great for near-instant tasks, up to 4096 tokens. Not as capable as Sonnet or Opus on complex tasks, but extremely cheap.",
+      "context_window": 200000,
+      "max_output_tokens": 4096,
+      "knowledge_cutoff": "Aug 2023",
+      "pricing": {
+        "input": "$0.25",
+        "output": "$1.25"
+      },
+      "quick_comparison": {
+        "Claude 3 Haiku": "$0.25 / $1.25"
+      },
+      "modalities": {
+        "text": {
+          "input": true,
+          "output": true
+        },
+        "vision": {
+          "input": true,
+          "output": false
+        }
+      },
+      "endpoints": {
+        "Chat Completions": "v1/complete",
+        "Messages": "v1/messages",
+        "Batch": "v1/batch",
+        "Streaming": "Supported",
+        "Embeddings": "Not supported"
+      },
+      "features": {
+        "Multilingual": "Yes",
+        "Extended thinking": "No",
+        "Vision": "Yes"
+      },
+      "snapshots": [
+        "claude-3-haiku-20240307",
+        "claude-3-haiku"
+      ],
+      "rate_limits": {}
+    }
+  }
+  
