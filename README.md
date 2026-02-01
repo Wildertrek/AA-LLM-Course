@@ -17,6 +17,7 @@ The material is intentionally modular. Each week in the syllabus maps to its own
 3. Install the dependencies required by the notebook or lab you are running (requirements are specified directly in the relevant module folders or notebooks).
 4. Duplicate `env-example.txt` to `.env` (or export the values in your shell) before running any RAG or agent labs.
 5. Launch JupyterLab or VS Code with the virtual environment selected and open the notebook or script for the week you are teaching.
+6. To run the AI Assistant (Module 4), navigate to the assistant directory and run `streamlit run app.py`.
 
 ### Environment Variables
 `env-example.txt` captures every secret used across the Azure Search, OpenAI, LangChain, and Anthropic exercises. Copy it to `.env` and replace placeholder values with your credentials. The labs automatically read from `.env`, so keeping one canonical file at the repo root prevents drift between modules.
@@ -27,26 +28,35 @@ The material is intentionally modular. Each week in the syllabus maps to its own
 - Diagramming/notetaking app for incorporating items from `Diagrams/` or `Markdown/`.
 
 ## Repository Map
+> **⚠️ Important Note on Paths:** Some directory names contain trailing spaces (specifically `Module 1` and `Module 4`). When navigating via CLI, ensure you quote the paths (e.g., `cd "Module 1 Foundations & LLM Interaction "`).
+
 | Path | Description | Highlights |
 | --- | --- | --- |
-| `Module 1 Foundations & LLM Interaction/` | Weeks 1-3 notebooks covering setup, the history of language models, and LangChain basics. | Historical LM notebooks, LangChain starter graph/chain/agent demos. |
+| `Module 1 Foundations & LLM Interaction /` | Weeks 1-3 notebooks covering setup, the history of language models, and LangChain basics. | Historical LM notebooks, LangChain starter graph/chain/agent demos. |
 | `Module 2 Advanced Prompt Engineering/` | Prompting labs and examples used in Weeks 4-6. | Prompt chains, advanced prompting notebooks. |
 | `Module 3 Retrieval-Augmented Generation (RAG)/` | Complete RAG curriculum for Weeks 7-9. | Chunking/indexing labs, LangChain RAG implementations, evaluation notebooks. |
-| `Module 4 AI Assistants & Agents/` | Agentic AI content for Weeks 10-12 plus the Streamlit assistant build. | `7-Building-AI-Assistants/` Python scripts and notebooks demonstrating Plan-and-Execute flows. |
+| `Module 4 AI Assistants & Agents /` | Agentic AI content for Weeks 10-12 plus the Streamlit assistant build. | `7-Building-AI-Assistants/` Python scripts and notebooks demonstrating Plan-and-Execute flows. |
 | `Module 5 Project Integration & Wrap-up/` | Capstone guidance and responsible AI materials for Weeks 13-15. | Project integration notes, final presentation scaffolding. |
-| `Notebooks/` | Stand-alone Jupyter notebooks grouped by theme for ad hoc workshops. | e.g., `1-Setup-Foundations/`, `4-Retrieval-Augmented Generation/`, `7-Building-AI-Assistants/`. |
+| `Notebooks/` | Stand-alone Jupyter notebooks grouped by theme for ad hoc workshops. | `1-Setup...`, `2-API...`, `3-Prompt...`, `4-Retrieval...`, `7-Building...`, `a14-Responsible...`. |
 | `Markdown/` | Reusable reference cards, prompt templates, and notes. | `Cards/` directory with model, dataset, and agent cards; prompt adjustment tables. |
 | `Data/` | Sample corpora referenced in the notebooks. | `pg2600.txt` for retrieval demos. |
 | `LLM-Images/` | Figures used throughout slides and cards. | Model architecture diagrams, prompt heuristics, OWASP risk graphics. |
 | `Diagrams/` | Data for generated diagrams plus notebooks that build them. | `Diagrams.ipynb`, AI threat crosswalk CSVs, heatmaps. |
 | `Papers/` | Curated PDF library supporting lectures and literature reviews. | 400+ PDFs spanning agents, RAG, reasoning, and responsible AI. |
 | `tree_output.txt` | Snapshot of the repository tree for quick diffing or syllabus references. | Helpful when generating LMS upload manifests. |
+| `GEMINI.md` / `CLAUDE.md` | Context files for AI coding assistants. | Setup instructions and architectural overviews for agents. |
+
+## Agent Instructions & Context
+This repository includes specialized context files to assist AI coding agents (and humans using them):
+- **`GEMINI.md`**: Context and instructions for Google Gemini (CLI).
+- **`CLAUDE.md`**: Guidance for Claude Code, including environment setup, architectural details, and warnings about directory quirks.
+- **`.claude/`**: Configuration for Claude.
 
 ## Working Through the Modules
 - **Module 1 – Foundations & LLM Interaction:** Start with `Week 1 History & Fundamentals of LLMs/` for environment setup and historical notebooks (BoW through Transformer). `Week 2` and `Week 3` folders layer in API usage and evaluation labs, and the nested `LangChain/` folder shows the same workflow through LangChain abstraction levels.
 - **Module 2 – Advanced Prompt Engineering:** Each week folder corresponds to the prompting topics outlined below. Many activities have complementary references inside `Markdown/Prompt-Engineering-Adjustments-Table.md`.
 - **Module 3 – Retrieval-Augmented Generation:** Contains end-to-end RAG walkthroughs, chunking experiments, vector database labs, and evaluation notebooks (see `Week 9 Enhancing the RAG Pipeline - Generation & Evaluation/Week 4 - Retrieval-Augmented Generation.ipynb` for the integrated pipeline).
-- **Module 4 – AI Assistants & Agents:** Includes conceptual material plus runnable assistants. The `Week 12 AI Assistant Implementation & Basic UI/7-Building-AI-Assistants` directory houses iterative Python builds (`AA-15.py` through `AA-40.py`) demonstrating how to add tools, memory, and Streamlit UIs.
+- **Module 4 – AI Assistants & Agents:** Includes conceptual material plus runnable assistants. The `Week 12 AI Assistant Implementation & Basic UI/7-Building-AI-Assistants` directory houses iterative Python builds (e.g., `AA-37.py` through `AA-40.py` and `app.py`) demonstrating how to add tools, memory, and Streamlit UIs.
 - **Module 5 – Project Integration & Wrap-up:** Use this folder during the final third of the semester for integration checkpoints, responsible AI deep dives, and presentation prep.
 
 ## Key Assets & References
@@ -151,7 +161,7 @@ This schedule expands on the modules with existing materials, dedicating more ti
 
 ### Software and Tools
 * Programming languages: Python
-* AI frameworks/APIs: OpenAI, Azure OpenAI, Anthropic (Optional)
+* AI frameworks/APIs: OpenAI (GPT-4o), Azure OpenAI, Anthropic (Claude 3.5 Sonnet), Google (Gemini 2.0 Flash), xAI (Grok-2)
 * LLM frameworks: LangChain, LlamaIndex
 * Application frameworks: Streamlit
 * Vector Stores: FAISS, ChromaDB (Examples)
